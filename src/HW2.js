@@ -33,8 +33,8 @@ class HW2 extends React.Component {
 
   render() {
     return (
-      <div>fdsfdfd  
-        <button onClick={this.handleClick}><h1>submit~~~~~fd</h1></button>
+      <div>  
+        <button onClick={this.handleClick}><h1>submit</h1></button>
         {/* 首先，你的縮排不正確 */}
         {/* 再來，不要叫 a 這種變數，不知道是啥意思 */}
         {/* 第三，加 key */}
