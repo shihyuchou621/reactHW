@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HW2 from './HW2';
+import HW4 from './HW4';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HW2 />
+    <HW4 />
   </React.StrictMode>,
   document.getElementById('root')
 );
