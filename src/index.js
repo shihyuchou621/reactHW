@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HW5 from './HW5';
+import HW from './HW7; 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HW5 />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <HW />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
