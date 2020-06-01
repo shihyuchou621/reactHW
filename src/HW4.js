@@ -28,7 +28,7 @@ class HW4 extends Component {
   // ↓ 這邊可以簡化, 用 { } 來取 e 裡面的 targe
   handleChange = ({ target }) => {
     this.setState({
-      [target.name]: target.value
+      [target.name]: target.value,
     });
   }
 
