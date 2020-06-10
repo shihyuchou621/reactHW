@@ -1,0 +1,26 @@
+.colorPicker {
+  width: 250px;
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 0 auto;
+}
+
+.colorName {
+  /* width: 100px; */
+  flex: 1;
+  /* background-color: pink; */
+  text-align: center;
+}
+
+.colorRange {
+  flex: 3;
+  text-align: center;
+  /* background-color: lightgreen; */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  border-radius: 5px;
+}

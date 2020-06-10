@@ -22,6 +22,9 @@ import React from 'react';
 }
 export default MyTimer;*/
 
+//var n = new Number(1);
+
+
 //時鐘
 class MyTime extends React.Component {
   constructor() {
