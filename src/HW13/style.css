@@ -1,0 +1,17 @@
+.HW13 {
+  padding-top: 30px;
+}
+
+.done {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.undone {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.inputRange {
+  display: inline-block;
+}
