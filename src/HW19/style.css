@@ -1,0 +1,21 @@
+.box {
+  width: 150px;
+  display: flex;
+}
+
+.unit {
+  font-size: 30px;
+  border: 1px solid rgb(220, 220, 220);
+  flex: 1;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.score {
+  text-align: center;
+}
