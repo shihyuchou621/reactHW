@@ -47,10 +47,11 @@ export default class index extends Component {
             <input 
               name="guess"
               disabled={false}
-              ref={element => this.guessInput = element}
+              ref={element => this.guessInput = element} //取得這個dom
             />
           </form>
         <h2>
+          {/* correct為1才出現 */}
           {!!this.state.correct && 
             <div>
               答對了！答案就是{this.state.answer}
