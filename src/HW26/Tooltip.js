@@ -10,7 +10,7 @@ export default class Tooltip extends Component {
       <span className="wrapper">
         {this.props.children}
         <div
-          className="tooltips"
+          className={cx("tooltips", at)}
         >{text}</div>
       </span>
     )
