@@ -1,0 +1,8 @@
+.content {
+  height: 100%;
+  font-size: 2rem;
+  /* text-align: center; 有flex他就沒用了*/
+  display: flex; /* 預設方向為水平 */
+  align-items: center;
+  justify-content: center;
+}

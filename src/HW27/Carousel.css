@@ -1,0 +1,67 @@
+.wrapper {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(200, 200, 200);
+  overflow: hidden;
+}
+
+@keyframes hide {
+  from { left: 0%;}
+  to { left: -100%;}
+}
+
+@keyframes show {
+  from { left: 100%;}
+  to { left: 0%;}
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background-color: rosybrown;
+  text-align: center;
+  /* display: flex; */
+}
+
+/* .item:nth-of-type(2) {
+  background-color: #ff0;
+} */
+
+.animationShow {
+  left: 0;
+  position: absolute;
+  animation: show 500ms;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+}
+
+.animationHide {
+  left: 0;
+  position: absolute;
+  animation: hide 500ms;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+}
+
+.dotsWrapper {
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.dots {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 100%;
+  background-color: gray;
+  display: inline-block;
+}
+
+.dotShow {
+  background-color: white;
+}
