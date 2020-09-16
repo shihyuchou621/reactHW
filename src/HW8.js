@@ -25,7 +25,7 @@ export default class HW8 extends Component {
             <button key={n} onClick={handleClick.bind(this, sum + n)}>{n}</button>
           )}
         </div>
-        <div>{sum}</div>
+        <div data-testid="sum">{sum}</div>
       </>
     );
   }
