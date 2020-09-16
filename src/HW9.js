@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-const DEFAULT_YEAR = 2021;
+const DEFAULT_YEAR = new Date().getFullYear() + 1;
 const SECOND = 1000;
 const MINUTE = SECOND * 60; 
 const HOUR = MINUTE * 60; 
 const DAY = HOUR * 24;
 
-const getMS = () => 
-  +new Date(`${DEFAULT_YEAR}/01/01`) - +new Date();
+export const getMS = () => 
+  +new Date(`${DEFAULT_YEAR}/01/01`) - (+new Date());
 
 
-const getCountDown = ms => {
+export const getCountDown = ms => {
   return `
       ${~~(ms/DAY)}天
       ${~~(ms/HOUR) % 24}時
