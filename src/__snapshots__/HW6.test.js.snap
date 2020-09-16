@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be deleted 1`] = `
+"<printHW6>
+  <div>
+    <HW6>
+      <div>
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
+        </form>
+        <ul />
+      </div>
+    </HW6>
+  </div>
+</printHW6>"
+`;
+
+exports[`should have blank in list 1`] = `
+"<printHW6>
+  <div>
+    <HW6>
+      <div>
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
+        </form>
+        <ul>
+          <li>
+            <button onClick={[Function: bound ]}>
+              remove
+            </button>
+          </li>
+          <li>
+            qwerty
+            <button onClick={[Function: bound ]}>
+              remove
+            </button>
+          </li>
+        </ul>
+      </div>
+    </HW6>
+  </div>
+</printHW6>"
+`;
+
+exports[`should have list 1`] = `
+"<printHW6>
+  <div>
+    <HW6>
+      <div>
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
+        </form>
+        <ul>
+          <li>
+            qwerty
+            <button onClick={[Function: bound ]}>
+              remove
+            </button>
+          </li>
+        </ul>
+      </div>
+    </HW6>
+  </div>
+</printHW6>"
+`;
+
+exports[`should have lists 1`] = `
+"<printHW6>
+  <div>
+    <HW6>
+      <div>
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
+        </form>
+        <ul>
+          <li>
+            zxcvbn
+            <button onClick={[Function: bound ]}>
+              remove
+            </button>
+          </li>
+          <li>
+            qwerty
+            <button onClick={[Function: bound ]}>
+              remove
+            </button>
+          </li>
+        </ul>
+      </div>
+    </HW6>
+  </div>
+</printHW6>"
+`;
+
+exports[`value should change 1`] = `
+"<printHW6>
+  <div>
+    <HW6>
+      <div>
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"qwerty\\" onChange={[Function]} />
+        </form>
+        <ul />
+      </div>
+    </HW6>
+  </div>
+</printHW6>"
+`;
