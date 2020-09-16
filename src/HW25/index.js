@@ -1,9 +1,9 @@
 
 import React, { Component } from 'react';
 
-import './style.css';
-
 import Modal from './Modal';
+
+import './style.css';
 
 const lorem = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error."
 
@@ -26,7 +26,7 @@ export default class index extends Component {
       <div className="bg">
         <button 
           className="btn btn-primary button"
-          onClick={this.handleClick.bind(this, 0)}
+          onClick={this.handleClick.bind(this, 0)} //將showIndex改成0
         >
           Modal
         </button>

@@ -1,6 +1,6 @@
 .bg {
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; /* 視窗寬度100%?? */
+  height: 100vh; /* 視窗高度100%?? */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
 
 .myAnimation1 {
   animation: show .5s ;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; /* 動畫結束時停留在最後的狀態 */
   /* top: 5%;
   transform: translate(-50%, 100%); */
 }
