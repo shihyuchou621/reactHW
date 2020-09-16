@@ -18,7 +18,9 @@ class HW1 extends React.Component {
   render() {
     return (
       <div>
-      <button onClick={this.handleClick}><h1>counter: {this.state.counter}</h1></button>
+        <button onClick={this.handleClick}>
+          <h1>counter: {this.state.counter}</h1>
+        </button>
       </div>
     );
   }
