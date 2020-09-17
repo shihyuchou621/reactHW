@@ -17,6 +17,7 @@ export class HW10Input extends Component {
     return (
       <div>
         <input
+          data-testid="HW10Input"
           name={name}
           value={value}
           onChange={onChange}

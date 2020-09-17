@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import DollarInput from './HW10Input';
+import { HW10Input } from './HW10Input';
 
 export default class HW10 extends Component {
   constructor() {
@@ -29,14 +29,14 @@ export default class HW10 extends Component {
 
     return (
       <>
-        <DollarInput
+        <HW10Input
           dollar={dollar}
           money={money}
           name="ntd"
           rate={30}
           onChange={handleChange}
         />
-        <DollarInput
+        <HW10Input
           dollar={dollar}
           money={money}
           name="usd"
