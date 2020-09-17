@@ -1,0 +1,10 @@
+{
+  "eslint.enable": true,
+  "eslint.workingDirectories": [
+  
+  ],
+  "eslint.options": {
+  
+  },
+  "eslint.debug": true
+}

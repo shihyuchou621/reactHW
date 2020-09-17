@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './new12.css'
+import './new12.css';
 
 export default class New12 extends Component {
   constructor() {
@@ -13,7 +13,7 @@ export default class New12 extends Component {
         {name: 'tag3', content: "lorem 3"},
         {name: 'tag4', content: "lorem 4"},
       ]
-    }
+    };
   }
 
   handleClick = choiceIndex => {
@@ -35,6 +35,6 @@ export default class New12 extends Component {
         )}
         <div className="content">{tagList[choiceIndex].content}</div>
       </div>
-    )
+    );
   }
 }

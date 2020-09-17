@@ -1,10 +1,10 @@
 import cx from 'classnames';
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export default class Modal extends Component {   
+export default class Modal extends Component {
   render() {
-    const { 
+    const {
       header,
       position,
       isAnimation,
@@ -22,7 +22,7 @@ export default class Modal extends Component {
           <h2>{header}</h2>
           }
           <div>{this.props.children}</div>
-          <button 
+          <button
             className="btn btn-primary btn-block"
             onClick={this.props.onClose}
           >
@@ -30,7 +30,6 @@ export default class Modal extends Component {
           </button>
         </div>
       </div>
-    )
+    );
   }
 }
- 

@@ -8,14 +8,14 @@ export default class HW10 extends Component {
     this.state = {
       money: 0,
       dollar: 'ntd',
-    }
+    };
   }
-  
+
   handleChange = ({ target }) => {
     this.setState({
       money: target.value,
       dollar: target.name,
-    })
+    });
   };
 
   render() {

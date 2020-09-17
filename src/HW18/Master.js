@@ -8,7 +8,7 @@ export default class Master extends Component {
     this.state = {
       score: 0,
       isQ: false,
-    }
+    };
   }
 
   tick = () => {
@@ -26,7 +26,7 @@ export default class Master extends Component {
     const { isQ, score } = this.state;
     const isCorrect = isQ && value.toUpperCase() === 'Q';
     this.setState({
-      isQ: false, 
+      isQ: false,
       score: score + (isCorrect ? 1: -1),
     });
   }
@@ -43,6 +43,6 @@ export default class Master extends Component {
           onChange={this.handleChange}
         />
       </div>
-    )
+    );
   }
 }

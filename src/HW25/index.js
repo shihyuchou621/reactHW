@@ -5,14 +5,14 @@ import './style.css';
 
 import Modal from './Modal';
 
-const lorem = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error."
+const lorem = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.";
 
 export default class index extends Component {
   constructor() {
     super();
     this.state = {
       showIndex: -1,
-    }
+    };
   }
 
   handleClick = showIndex => {
@@ -20,11 +20,11 @@ export default class index extends Component {
   }
 
   render() {
-    const { showIndex } = this.state
+    const { showIndex } = this.state;
 
     return (
       <div className="bg">
-        <button 
+        <button
           className="btn btn-primary button"
           onClick={this.handleClick.bind(this, 0)}
         >
@@ -34,11 +34,11 @@ export default class index extends Component {
           name="Modal"
           position="center"
           onClose={this.handleClick.bind(this, -1)}
-          >
-            {lorem}
-          </Modal>}
-        
-        <button 
+        >
+          {lorem}
+        </Modal>}
+
+        <button
           className="btn btn-primary button"
           onClick={this.handleClick.bind(this, 1)}
         >
@@ -51,8 +51,8 @@ export default class index extends Component {
         >
           {lorem}
         </Modal>}
-        
-        <button 
+
+        <button
           className="btn btn-primary button"
           onClick={this.handleClick.bind(this, 2)}
         >
@@ -67,7 +67,7 @@ export default class index extends Component {
           {lorem}
         </Modal>}
 
-        <button 
+        <button
           className="btn btn-primary button"
           onClick={this.handleClick.bind(this, 3)}
         >
@@ -81,6 +81,6 @@ export default class index extends Component {
           {lorem}
         </Modal>}
       </div>
-    )
+    );
   }
 }

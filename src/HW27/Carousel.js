@@ -1,17 +1,17 @@
 import cx from 'classnames';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import './Carousel.css';
 
 export default class Carousel extends Component {
-  //constructor要使用props一定要用下面這種寫法
+  // constructor要使用props一定要用下面這種寫法
   constructor(props) {
     super();
     this.state = {
       whichShow: 0,
       isMove: false,
       itemList: props.children,
-    }
+    };
   }
 
   cycle = () => {
@@ -23,7 +23,7 @@ export default class Carousel extends Component {
       this.setState({
         isMove: true,
         whichShow: ( whichShow + 1 ) % itemList.length,
-      })
+      });
 
       setTimeout(() => {
         this.setState({
@@ -32,16 +32,16 @@ export default class Carousel extends Component {
             ...itemList.slice(0,1)
           ],
           isMove: false,
-        })
+        });
       }, time / 3);
     }, time);
-    
+
   }
 
   componentDidMount() {
     this.cycle();
   }
-  
+
   render() {
     const {itemList, isMove, whichShow} = this.state;
     return (
@@ -55,7 +55,7 @@ export default class Carousel extends Component {
         )}
         {this.props.showDots &&
           <div className="dotsWrapper">
-            {itemList.map((item, index) => 
+            {itemList.map((item, index) =>
               <div key={index} className={cx("dots", {
                 dotShow: index === whichShow,
               })} />
@@ -63,6 +63,6 @@ export default class Carousel extends Component {
           </div>
         }
       </div>
-    )
+    );
   }
 }

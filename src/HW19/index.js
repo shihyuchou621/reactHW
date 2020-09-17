@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './style.css'
+import React, { Component } from 'react';
+import './style.css';
 import Gophers from './components/Gophers';
 
 export default class index extends Component {
@@ -7,14 +7,14 @@ export default class index extends Component {
     super();
     this.state = {
       sumScore: 0,
-    }
+    };
   }
 
   setScore = ( score ) => {
     this.setState({
       sumScore: this.state.sumScore + score,
-    })
-  } 
+    });
+  }
 
   render() {
     const {sumScore} = this.state;
@@ -27,6 +27,6 @@ export default class index extends Component {
           )}
         </div>
       </div>
-    )
+    );
   }
 }

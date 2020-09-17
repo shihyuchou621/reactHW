@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class HW7 extends Component {
   constructor() {
@@ -19,7 +19,7 @@ class HW7 extends Component {
   componentDidMount() {
     this.fetchData();
   }
-  
+
   /** 程式的執行順序 */
   handleClick = () => {
     this.fetchData();
@@ -49,23 +49,23 @@ class HW7 extends Component {
             </tr>
           </thead>
           <tbody>
-            {result.map( user => 
-            <tr key={user.login.uuid}>
-              <td><img src={user.picture.thumbnail} alt={user.name.last} /></td>
-              <td>{user.name.last}</td>
-              <td>{user.gender}</td>
-              <td>{user.email}</td>
-              <td>{user.dob.age}</td>
-              <td>{user.phone}</td>
-              <td>{user.location.country}</td>
-            </tr>)}
+            {result.map( user =>
+              <tr key={user.login.uuid}>
+                <td><img src={user.picture.thumbnail} alt={user.name.last} /></td>
+                <td>{user.name.last}</td>
+                <td>{user.gender}</td>
+                <td>{user.email}</td>
+                <td>{user.dob.age}</td>
+                <td>{user.phone}</td>
+                <td>{user.location.country}</td>
+              </tr>)}
           </tbody>
         </table>
 
       </div>
     );
   }
-  
+
 }
 
 export default class printHW7 extends Component {

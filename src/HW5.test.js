@@ -46,7 +46,7 @@ test('should have lists', () => {
   });
   DOM.find('form').simulate('submit');
   expect(DOM.debug()).toMatchSnapshot();
-});  
+});
 
 test('should have blank in list', () => {
   const DOM = mount(<HW />);

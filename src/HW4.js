@@ -7,10 +7,10 @@ class HW4 extends Component {
       cm: "",
       kg: "",
       bmi: "",
-    }
-    //this.handleClick = this.handleClick.bind(this); 箭頭函式不需要bind
-    //this.handleChangeCm = this.handleChangeCm.bind(this); 
-    //this.handleChangmKg = this.handleChangeKg.bind(this);
+    };
+    // this.handleClick = this.handleClick.bind(this); 箭頭函式不需要bind
+    // this.handleChangeCm = this.handleChangeCm.bind(this);
+    // this.handleChangmKg = this.handleChangeKg.bind(this);
   }
 
   // handleChangeCm = (e) => {
@@ -37,7 +37,7 @@ class HW4 extends Component {
     this.setState({
       bmi: (this.state.kg / this.state.cm / this.state.cm * 10000).toFixed(2),
       // bmi: ~~(this.state.kg / this.state.cm / this.state.cm * 10000),
-    })
+    });
   }
 
   render() {
@@ -49,16 +49,16 @@ class HW4 extends Component {
 
     return (
       <>
-      <div>身高: <input name="cm" value={cm} onChange={handleChange} /></div>
-      <div>體重: <input name="kg" value={kg} onChange={handleChange} /></div>
-      <button onClick={handleClick}>計算!</button>
-      <div>BMI: {bmi} </div>
+        <div>身高: <input name="cm" value={cm} onChange={handleChange} /></div>
+        <div>體重: <input name="kg" value={kg} onChange={handleChange} /></div>
+        <button onClick={handleClick}>計算!</button>
+        <div>BMI: {bmi} </div>
       </>
     );
   }
 }
 
-export default class printHW4 extends Component{
+export default class printHW4 extends Component {
   render() {
     return (
       <div><HW4 /></div>

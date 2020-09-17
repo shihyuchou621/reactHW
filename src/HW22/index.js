@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import './style.css';
 
@@ -16,51 +16,51 @@ export default class index extends Component {
         {id: 4, name: '蘋果',   price: 50, amount: 0},
         {id: 5, name: '葡萄柚', price: 15, amount: 0},
       ]
-    }
-  } 
+    };
+  }
 
   addToCart = (index, value) => {
     const { productList } = this.state;
-    productList[index].amount += value
+    productList[index].amount += value;
 
     this.setState({
       productList
-    })
+    });
   }
 
   minusOne = id => {
     const { productList } = this.state;
-    const productIndex = productList.findIndex(product => product.id === id)
-    productList[productIndex].amount -= 1
+    const productIndex = productList.findIndex(product => product.id === id);
+    productList[productIndex].amount -= 1;
 
     this.setState({
       productList
-    })
+    });
   }
 
   clearAll = id => {
     const { productList } = this.state;
-    const productIndex = productList.findIndex(product => product.id === id) //取得index
-    productList[productIndex].amount = 0
+    const productIndex = productList.findIndex(product => product.id === id); // 取得index
+    productList[productIndex].amount = 0;
 
     this.setState({
       productList
-    })
+    });
   }
 
   render() {
-    const {productList} = this.state
+    const {productList} = this.state;
 
     const total = productList
       .map(({price, amount}) => (price * amount))
-      .reduce((a,b) => a+b)
+      .reduce((a,b) => a+b);
       // productList.map((product) => (product.price * product.amount)).reduce((a,b) => a+b)
 
     return (
       <div className="container">
         <div className="productArea">
           {productList.map((product, index) =>
-            <Product 
+            <Product
               key={index}
               name={product.name}
               price={product.price}
@@ -71,21 +71,21 @@ export default class index extends Component {
         </div>
         <div className="cartArea">
           {productList
-              .filter(product => product.amount > 0)
-              .map((product) =>
-                <div className="productInCart" key={product.id}>
-                    {product.name} x {product.amount} = ${product.price * product.amount}
-                  <button 
-                    className="buttonInCart btn btn-danger btn-sm"
-                    onClick={this.clearAll.bind(this, product.id)} 
-                  >clear</button>
-                  <button 
-                    className="buttonInCart btn btn-warning btn-sm"
-                    onClick={this.minusOne.bind(this, product.id)} 
-                    //minusOne的第一個參數會變product.id，原本的e則變成第二個參數 
-                  >-1</button>
-                </div>
-              )
+            .filter(product => product.amount > 0)
+            .map((product) =>
+              <div className="productInCart" key={product.id}>
+                {product.name} x {product.amount} = ${product.price * product.amount}
+                <button
+                  className="buttonInCart btn btn-danger btn-sm"
+                  onClick={this.clearAll.bind(this, product.id)}
+                >clear</button>
+                <button
+                  className="buttonInCart btn btn-warning btn-sm"
+                  onClick={this.minusOne.bind(this, product.id)}
+                  // minusOne的第一個參數會變product.id，原本的e則變成第二個參數
+                >-1</button>
+              </div>
+            )
           }
           {!!total&&
           <div>
@@ -95,6 +95,6 @@ export default class index extends Component {
           }
         </div>
       </div>
-    )
+    );
   }
 }

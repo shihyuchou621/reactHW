@@ -11,21 +11,21 @@ const cmEvent = {
     name: 'cm',
     value: '165',
   }
-}
+};
 
 const kgEvent = {
   target: {
     name: 'kg',
     value: '50',
   }
-}
+};
 
 const eventObj = {
   cm: cmEvent,
   kg: kgEvent,
-}
+};
 
-const itemList = ['cm', 'kg']
+const itemList = ['cm', 'kg'];
 
 test('should HW4', () => {
   const DOM = mount(<HW />);
@@ -37,8 +37,8 @@ itemList.forEach(item => {
     const DOM = mount(<HW />);
     DOM.find(`input[name="${item}"]`).simulate('change', eventObj[item]);
     expect(DOM.debug()).toMatchSnapshot();
-  })
-})
+  });
+});
 
 // test('height should change', () => {
 //   const DOM = mount(<HW />);
@@ -58,5 +58,5 @@ test('should calculate', () => {
   DOM.find('input[name="kg"]').simulate('change', kgEvent);
   DOM.find('button').simulate('click');
   expect(DOM.debug()).toMatchSnapshot();
-})
+});
 

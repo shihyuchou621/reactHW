@@ -12,7 +12,7 @@ class HW6 extends Component {
   handleChange = ({ target }) => {
     this.setState({
       [target.name]: target.value
-    })
+    });
   }
 
   handleEnter = (e) => {
@@ -74,7 +74,7 @@ class HW6 extends Component {
   }
 }
 
-export default class printHW6 extends Component{
+export default class printHW6 extends Component {
   render() {
     return (
       <div><HW6 /></div>

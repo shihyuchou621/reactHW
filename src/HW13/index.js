@@ -36,8 +36,8 @@ export default class index extends Component {
   handleClick = (index) => {
     const { toDoList } = this.state;
     toDoList[index].done = !toDoList[index].done;
-    
-    this.setState({ toDoList })
+
+    this.setState({ toDoList });
   }
 
   render() {
@@ -66,17 +66,17 @@ export default class index extends Component {
 
         <div className="list-group">
           {toDoList.map((item, index) =>
-            <div 
+            <div
               className={
                 "list-group-item "
-                + (item.done ? "done" : "undone")}  
-              key={index} 
+                + (item.done ? "done" : "undone")}
+              key={index}
               onClick={handleClick.bind(this, index)}
             >
               {item.content}
             </div> )}
         </div>
       </div>
-    )
+    );
   }
 }

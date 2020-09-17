@@ -5,4 +5,4 @@ function add(x, y) {
 add(1, 2);
 
 const add1 = add.bind(null, 1);
-add1(2)
+add1(2);

@@ -6,7 +6,7 @@ export default class Gophers extends Component {
     super();
     this.state = {
       isG: Boolean(Math.round(Math.random())),
-    }
+    };
   }
 
   tick = () => {
@@ -22,7 +22,7 @@ export default class Gophers extends Component {
     this.setState({
       isG: false,
     });
-    
+
   }
 
   componentDidMount() {
@@ -38,6 +38,6 @@ export default class Gophers extends Component {
       >
         {isG ? 'G' : '-'}
       </div>
-    )
+    );
   }
 }

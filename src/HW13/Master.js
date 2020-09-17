@@ -18,7 +18,7 @@ export default class Master extends Component {
   }
 
   handleChange = e => {
-    this.setState({ input: e.target.value })
+    this.setState({ input: e.target.value });
   }
 
   handleSubmit = e => {
@@ -30,14 +30,14 @@ export default class Master extends Component {
       ],
       input: '',
     });
-    
+
   }
-  
+
   handleDone = todo => {
     const { todoList } = this.state;
     const doneIndex = todoList.findIndex(item => item.id === todo.id);
     todoList[doneIndex].done = !todo.done;
-    this.setState({ todoList })
+    this.setState({ todoList });
   }
 
   render() {
@@ -69,6 +69,6 @@ export default class Master extends Component {
           )}
         </ul>
       </div>
-    )
+    );
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import './style.css';
 
@@ -13,9 +13,9 @@ const unitList = [
 
 const getValue = (unit, item, lenth, denoRate) => {
   return unit === item.unit ?
-        lenth:
-        lenth * denoRate / item.rate;
-}
+    lenth:
+    lenth * denoRate / item.rate;
+};
 
 export default class index extends Component {
   constructor() {
@@ -24,7 +24,7 @@ export default class index extends Component {
       lenth: 0,
       unit: 'mm',
       denoRate: 1,
-    }
+    };
   }
 
   handleChange = (name, rate, { target }) => {
@@ -32,10 +32,10 @@ export default class index extends Component {
       unit: name,
       denoRate: rate,
       lenth: target.value,
-    })
+    });
 
     console.log(this.state.denoRate);
-    
+
   };
 
   render() {
@@ -64,4 +64,4 @@ export default class index extends Component {
   }
 }
 
-//運算式太複雜 or 必須在下一層才能運算
+// 運算式太複雜 or 必須在下一層才能運算

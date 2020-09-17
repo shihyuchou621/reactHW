@@ -11,8 +11,8 @@ export default class HW8 extends Component {
   handleClick = sum => {
     this.setState({ sum });
   }
-  
-  render() { 
+
+  render() {
     const {
       handleClick,
       state: { sum },

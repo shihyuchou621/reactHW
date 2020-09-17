@@ -1,6 +1,6 @@
 import cx from 'classnames' ;
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Tooltip extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class Tooltip extends Component {
           className={cx("tooltips", at)}
         >{text}</div>
       </span>
-    )
+    );
   }
 }
 // className={cx("tooltip", {at})}

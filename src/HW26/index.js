@@ -25,6 +25,6 @@ export default class index extends Component {
           </Tooltip>
         </div>
       </div>
-    )
+    );
   }
 }

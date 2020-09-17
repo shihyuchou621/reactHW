@@ -1,10 +1,10 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 
 
-//時鐘新寫法
-/*function MyTimer() {
+// 時鐘新寫法
+/* function MyTimer() {
 
   const [time, setTime] = React.useState(new Date());
 
@@ -20,31 +20,31 @@ import React from 'react';
     </div>
   );
 }
-export default MyTimer;*/
+export default MyTimer; */
 
-//var n = new Number(1);
+// var n = new Number(1);
 
 
-//時鐘
+// 時鐘
 class MyTime extends React.Component {
   constructor() {
     super();
     this.state = {
       value: new Date().toLocaleString()
-    }
-  }  
+    };
+  }
 
   componentDidMount() {
     setInterval(() => {
       this.setState({
         value: new Date().toLocaleString()
-      })
+      });
     }, 1000);
-    }
-    
+  }
+
   render() {
     return (
-    <div>Now: {this.state.value}</div>
+      <div>Now: {this.state.value}</div>
     );
   }
 }
@@ -60,7 +60,7 @@ function Timer() {
 export default Timer;
 
 
-//碼表
+// 碼表
 /*
 class MyCounter extends React.Component {
 
@@ -69,7 +69,7 @@ class MyCounter extends React.Component {
     this.state = {
       value: 0
     }
-  }  
+  }
 
   componentDidMount() {
     setInterval(() => {
@@ -78,7 +78,7 @@ class MyCounter extends React.Component {
       })
     }, 1000);
     }
-    
+
   render() {
     return (
     <>
@@ -100,7 +100,7 @@ function Counter() {
 export default Counter;
 */
 
-//士揚寫法
+// 士揚寫法
 /*
 class MyCounterItem extends React.Component {
   render() {
@@ -141,7 +141,7 @@ class MyCounterBlock extends React.Component {
           value={this.state.input}
           onChange={this.handleChange}
         />
-        {[...Array(this.state.input).keys()].map((value) => 
+        {[...Array(this.state.input).keys()].map((value) =>
           <MyCounterItem
             key={value}
             base={value + 1}

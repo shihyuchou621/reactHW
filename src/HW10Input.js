@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 /** props.name, rate, onChange */
 export class HW10Input extends Component {
@@ -23,6 +23,6 @@ export class HW10Input extends Component {
           onChange={onChange}
         />
       </div>
-    )
+    );
   }
 }

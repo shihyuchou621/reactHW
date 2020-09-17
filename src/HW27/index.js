@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import Carousel from './Carousel';
 
@@ -9,11 +9,11 @@ export default class index extends Component {
     // component的children傳到子層會變成陣列形式，一個標籤一個項目
     return (
       <div>
-        <Carousel 
+        <Carousel
           time={1500}
           showDots={true}
         >
-        {/* css in js 
+          {/* css in js
           <div style={{height: '100%'}}>1</div>
         */}
           <div className="content">1</div>
@@ -21,6 +21,6 @@ export default class index extends Component {
           <div className="content">3</div>
         </Carousel>
       </div>
-    )
+    );
   }
 }

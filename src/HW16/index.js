@@ -7,7 +7,7 @@ export default class index extends Component {
       correct: 0,
       wrong: 0,
       random: Math.floor(Math.random() * 10),
-    }
+    };
   }
 
   handleChange = ({ target }) => {
@@ -16,7 +16,7 @@ export default class index extends Component {
       wrong: +target.value === this.state.random ? this.state.wrong : this.state.wrong + 1,
       random: Math.floor(Math.random() * 10),
 
-    })
+    });
   }
 
   // componentDidMount() {
@@ -24,17 +24,17 @@ export default class index extends Component {
   //     random: Math.floor(Math.random() * 10),
   //   })
   // }
-  
+
   render() {
     const {
       correct, wrong, random,
-    } = this.state
+    } = this.state;
 
     return (
       <div>
         <div>{random}</div>
         <div>
-          <input 
+          <input
             value={""}
             onChange={this.handleChange}
           />
@@ -42,6 +42,6 @@ export default class index extends Component {
         <div>答對: {correct} </div>
         <div>答錯: {wrong} </div>
       </div>
-    )
+    );
   }
 }

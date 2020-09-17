@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import './style.css';
 
@@ -17,7 +17,7 @@ export default class index extends Component {
       .then(res => res.json())
       .then(({ results: result }) => {
         this.setState({ result });
-      })
+      });
   }
 
   handleChange = ({ target }) => {
@@ -37,7 +37,7 @@ export default class index extends Component {
       state: { inputValue, result, re }
     } = this;
 
-    
+
 
     return (
       <div className="container HW14">
@@ -55,18 +55,18 @@ export default class index extends Component {
           />
         </div>
         {result
-        .filter(pokemon => re.test(pokemon.name))
-        .map( pokemon =>
-          <div className="inline" key={pokemon.name}>
-            <img 
-              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.replace("https://pokeapi.co/api/v2/pokemon/","").replace("/","")}.png`} 
-              alt={pokemon.name} 
-            />
-            <div>{pokemon.name}</div>
-          </div>
-        )}
-        
+          .filter(pokemon => re.test(pokemon.name))
+          .map( pokemon =>
+            <div className="inline" key={pokemon.name}>
+              <img
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.replace("https://pokeapi.co/api/v2/pokemon/","").replace("/","")}.png`}
+                alt={pokemon.name}
+              />
+              <div>{pokemon.name}</div>
+            </div>
+          )}
+
       </div>
-    )
+    );
   }
 }

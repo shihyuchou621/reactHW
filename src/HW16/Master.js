@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const getRandom = () => {
   return ~~(Math.random() * 10);
-}
+};
 
 let random = getRandom();
 
@@ -12,7 +12,7 @@ export default class Master extends Component {
     this.state = {
       wrong: 0,
       correct: 0,
-    }
+    };
   }
 
   handleChange = ({ target: { value } }) => {
@@ -38,6 +38,6 @@ export default class Master extends Component {
         <div>wrong: {wrong}</div>
         <div>correct: {correct}</div>
       </div>
-    )
+    );
   }
 }

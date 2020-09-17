@@ -14,7 +14,7 @@ class HW3 extends Component {
     this.setState( {
       counter: this.state.counter + 1,
       result: this.state.result + this.state.counter,
-    } )
+    } );
   }
 
   render() {
@@ -27,19 +27,19 @@ class HW3 extends Component {
   }
 }
 
-//function component
-/*export default function printHW3() {
-  return <HW3 />; 
-}*/
+// function component
+/* export default function printHW3() {
+  return <HW3 />;
+} */
 
-//class component
+// class component
 export default class printHW3 extends Component {
   render() {
     return(
       <div>
         <HW3 />
       </div>
-    ); 
+    );
   }
 }
 
