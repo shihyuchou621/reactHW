@@ -46,7 +46,7 @@ export default class HW11 extends Component {
         {colorList.map(color =>
           <ColorPicker
             key={color}
-
+            name={color}
             {...{
               color,
               value: this.state[color],

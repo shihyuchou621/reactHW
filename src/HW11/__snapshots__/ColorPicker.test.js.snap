@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should change correctly 1`] = `
+<div>
+  <div
+    class="colorPicker"
+  >
+    <div
+      class="colorName"
+    >
+      red
+    </div>
+    <div
+      class="colorRange"
+    >
+      <input
+        data-testid="ColorPicker"
+        max="255"
+        min="0"
+        type="range"
+        value="128"
+      />
+    </div>
+  </div>
+</div>
+`;
