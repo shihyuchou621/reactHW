@@ -19,8 +19,10 @@ export default class LenthInput extends Component {
     return (
       <div className="input-group mb-3">
         <input
+          data-testid="LenthInput"
+          name={name}
           value={value}
-          type={Number}
+          type="number"
           className="form-control"
           onChange={onChange}
         />

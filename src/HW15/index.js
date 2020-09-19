@@ -34,7 +34,7 @@ export default class index extends Component {
       lenth: target.value,
     });
 
-    console.log(this.state.denoRate);
+    // console.log(this.state.denoRate);
 
   };
 
