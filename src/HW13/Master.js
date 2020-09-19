@@ -23,6 +23,7 @@ export default class Master extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    if(!this.state.input.trim()) {return;}
     this.setState({
       todoList: [
         { id: Math.random(), content: this.state.input, done: false },
@@ -44,16 +45,22 @@ export default class Master extends Component {
     const { input } = this.state;
     return (
       <div className="container">
-        <form onSubmit={this.handleSubmit}>
+        <form
+          onSubmit={this.handleSubmit}
+          data-testid="form"
+        >
           <div className="input-group mb-3">
             <input
+              data-testid="input"
               type="text"
               value={input}
               className="form-control"
               onChange={this.handleChange}
             />
             <div className="input-group-append">
-              <button className="btn btn-outline-secondary">save</button>
+              <button className="btn btn-outline-secondary">
+                save
+              </button>
             </div>
           </div>
         </form>
