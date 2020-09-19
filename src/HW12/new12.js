@@ -33,7 +33,9 @@ export default class New12 extends Component {
             {tag.name}
           </div>
         )}
-        <div className="content">{tagList[choiceIndex].content}</div>
+        <div className="content">
+          {tagList[choiceIndex].content}
+        </div>
       </div>
     );
   }
