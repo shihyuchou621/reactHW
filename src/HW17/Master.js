@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const getRandom = (max, min = 0) => {
+export const getRandom = (max, min = 0) => {
   return ~~(Math.random() * (max - min + 1)) + min;
 };
 
@@ -26,7 +26,7 @@ export default class Master extends Component {
 
   render() {
     return (
-      <div>
+      <div data-testid="num">
         {this.state.num}
       </div>
     );
