@@ -23,20 +23,26 @@ export default class Master extends Component {
       [attr]: this.state[attr] + 1,
     });
 
-    console.log('a');
   }
   render() {
     const {
       wrong,
       correct,
     } = this.state;
-    console.log('b');
     return (
       <div>
         <h3>{random}</h3>
-        <input type="text" value="" onChange={this.handleChange} />
-        <div>wrong: {wrong}</div>
-        <div>correct: {correct}</div>
+        <input
+          data-testid="input"
+          type="text"
+          value="" onChange={this.handleChange}
+        />
+        <div
+          data-testid="wrong"
+        >wrong: {wrong}</div>
+        <div
+          data-testid="correct"
+        >correct: {correct}</div>
       </div>
     );
   }
