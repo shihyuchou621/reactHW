@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './style.scss';
 
+const t = +new Date();
+
 export default class Master extends Component {
   constructor() {
     super();
@@ -13,7 +15,7 @@ export default class Master extends Component {
 
   tick = () => {
     this.setState({ isQ: !this.state.isQ });
-    setTimeout(() => {
+    this.timer = setTimeout(() => {
       this.tick();
     }, ~~(Math.random() * 1500) + 500);
   }
@@ -22,8 +24,14 @@ export default class Master extends Component {
     this.tick();
   }
 
+  // 偵測到即將被移除時觸發
+  componentWillUnmount() {
+    clearTimeout(this.timer);
+  }
+
   handleChange = ({ target: {value}}) => {
     const { isQ, score } = this.state;
+    console.log(+new Date() - t, this.state.isQ);
     const isCorrect = isQ && value.toUpperCase() === 'Q';
     this.setState({
       isQ: false,
@@ -36,8 +44,11 @@ export default class Master extends Component {
     return (
       <div>
         <h3>{isQ ? 'Q': '-'}</h3>
-        <div>score: {score} </div>
+        <div data-testid="score">
+          score: {score}
+        </div>
         <input
+          data-testid="input"
           value=""
           type="text"
           onChange={this.handleChange}

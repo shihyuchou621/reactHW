@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correct answer 1`] = `
+<div>
+  <div>
+    <h3>
+      -
+    </h3>
+    <div
+      data-testid="score"
+    >
+      score: 
+      4
+    </div>
+    <input
+      data-testid="input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`wrong answer 1`] = `
+<div>
+  <div>
+    <h3>
+      -
+    </h3>
+    <div
+      data-testid="score"
+    >
+      score: 
+      -3
+    </div>
+    <input
+      data-testid="input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
