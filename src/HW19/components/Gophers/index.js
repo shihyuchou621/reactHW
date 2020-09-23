@@ -11,7 +11,7 @@ export default class Gophers extends Component {
 
   tick = () => {
     this.setState({ isG: !this.state.isG });
-    setTimeout(() => {
+    this.timer = setTimeout(() => {
       this.tick();
     } , ~~(Math.random() * 4000) + 2000);
   }
@@ -23,6 +23,10 @@ export default class Gophers extends Component {
       isG: false,
     });
 
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   componentDidMount() {

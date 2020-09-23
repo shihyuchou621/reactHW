@@ -20,7 +20,9 @@ export default class index extends Component {
     const {sumScore} = this.state;
     return (
       <div className="HW19">
-        <h1 className="score">{sumScore}</h1>
+        <h1 data-testid="score" className="score">
+          {sumScore}
+        </h1>
         <div className="wrapper">
           {[...Array(9).keys()].map(index =>
             <Gophers key={index} setScore={this.setScore} />
