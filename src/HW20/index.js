@@ -42,9 +42,14 @@ export default class index extends Component {
   render() {
     return (
       <div>
-        <h2>現在範圍: {this.state.min} ~ {this.state.max}</h2>
-        <form className="input-group mb-3" onSubmit={this.handleEnter}>
+        <h2 data-testid="range">現在範圍: {this.state.min} ~ {this.state.max}</h2>
+        <form
+          data-testid="form"
+          className="input-group mb-3"
+          onSubmit={this.handleEnter}
+        >
           <input
+            data-testid="input"
             name="guess"
             disabled={false}
             ref={element => this.guessInput = element} // 取得這個dom
@@ -53,7 +58,7 @@ export default class index extends Component {
         <h2>
           {/* correct為1才出現 */}
           {!!this.state.correct &&
-            <div>
+            <div data-testid="answer">
               答對了！答案就是{this.state.answer}
               <button onClick={this.handleClick}>再來一局</button>
             </div>
