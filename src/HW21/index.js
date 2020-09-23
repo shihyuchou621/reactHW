@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const getInitiate = () => {
+export const getInitiate = () => {
   return {
     answer: [...Array(10).keys()] // [0,1,2,3,4,5,6,7,8,9]
       .sort(() => Math.random() - 0.5) // 正數交換，負數不交換
@@ -12,7 +12,7 @@ const getInitiate = () => {
 };
 
 // 若非不重複4位數，跳出警示視窗
-const isError = value => {
+export const isError = value => {
   if(value.length !== 4) return true;
   if(isNaN(Number(value))) return true;
   if([...new Set(value)].length !== 4) return true;
@@ -29,7 +29,7 @@ export default class index extends Component {
     this.setState(getInitiate());
   }
 
-  handleEnter = e =>{ // 此處的e為<form>這個dom
+  handleEnter = e =>{ // 此處的e為<form>這個dom的事件
     e.preventDefault();
     const value = this.guessInput.value.trim(); // 忽略開頭及結尾空格(中間的不行)
     const { answer, replyList } = this.state;
@@ -68,8 +68,9 @@ export default class index extends Component {
         <div>3. 送出的答案跟正確答案比較，位置一樣則A，位置不同則B</div>
         <div>4. 會累積過去猜過的答案與結果</div>
         <div>5. 如果猜到 4A 則遊戲結束，並可另開新局</div>
-        <form onSubmit={this.handleEnter}>
+        <form data-testid="form" onSubmit={this.handleEnter}>
           <input
+            data-testid="input"
             name="guess"
             disabled={this.state.correct}
             ref={element => this.guessInput = element}
@@ -77,17 +78,17 @@ export default class index extends Component {
           <button>猜!</button>
           {/* type屬性若空白則預設onSubmit，另有button(按了無作用)、reset(回復form的預設值) */}
         </form>
-        <ul>
+        <ul data-testid="resultList">
           {/* map裡所有標籤都要記得加key */}
-          {this.state.replyList.map(reply =>
-            <li key={reply.id}>
+          {this.state.replyList.map((reply, index) =>
+            <li data-testid={`result${index}`} key={index}>
               {reply.result}
             </li>
           )}
         </ul>
         <div>
           {this.state.correct &&
-          <div>
+          <div data-testid="4A">
             答對了！遊戲結束，你要重新一局嗎？
             <button onClick={this.handleClick}>好!</button>
           </div>
