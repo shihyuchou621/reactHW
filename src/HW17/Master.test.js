@@ -3,7 +3,6 @@ import React from 'react';
 import {
   cleanup,
   render,
-  fireEvent,
 } from '@testing-library/react';
 
 import HW, { getRandom } from './Master';

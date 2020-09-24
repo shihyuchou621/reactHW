@@ -27,7 +27,10 @@ export default class LenthInput extends Component {
           onChange={onChange}
         />
         <div className="input-group-append">
-          <span className="input-group-text" id="basic-addon2">{name}</span>
+          <span
+            className="input-group-text"
+            id="basic-addon2"
+          >{name}</span>
         </div>
       </div>
     );

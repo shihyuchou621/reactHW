@@ -6,7 +6,7 @@ import {
   fireEvent,
 } from '@testing-library/react';
 
-import HW, { getRandom } from './Master';
+import HW from './Master';
 
 afterEach(cleanup);
 

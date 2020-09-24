@@ -14,7 +14,7 @@ jest.useFakeTimers();
 
 /** ↓ 取好一點的名稱，不然我要取能混就混，能撈就撈哦 */
 test('click gophers and get correct score', () => {
-  const { container, getAllByText, getByTestId } = render(<HW />);
+  const { getAllByText, getByTestId } = render(<HW />);
   // console.log('看看我是什麼', getByText("G"));
   /** 有 eslint 好方便吶，分號沒打都會自己存 沒錯 */
   fireEvent.click(getAllByText("G")[0]);
@@ -29,9 +29,7 @@ test('click gophers and get correct score', () => {
 });
 
 test('click and get correct score 2', () => {
-  const { container, getAllByText, getByTestId } = render(<HW />);
-  // console.log('看看我是什麼', getByText("G"));
-  /** 有 eslint 好方便吶，分號沒打都會自己存 沒錯 */
+  const { getAllByText, getByTestId } = render(<HW />);
   fireEvent.click(getAllByText("G")[0]);
 
   jest.advanceTimersByTime(2000);
