@@ -21,7 +21,9 @@ export default class Modal extends Component {
           {header &&
           <h2>{header}</h2>
           }
-          <div>{this.props.children}</div>
+          <div data-testid="content">
+            {this.props.children}
+          </div>
           <button
             className="btn btn-primary btn-block"
             onClick={this.props.onClose}

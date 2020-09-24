@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click and show Modal 1`] = `
+<div>
+  <div
+    class="bg"
+  >
+    <button
+      class="btn btn-primary button"
+    >
+      Modal
+    </button>
+    <div
+      class="modalBg"
+    >
+      <div
+        class="allModal myModal"
+      >
+        <div
+          data-testid="content"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
+        </div>
+        <button
+          class="btn btn-primary btn-block"
+        >
+          關閉
+        </button>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary button"
+    >
+      top
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      header
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      top + animation
+    </button>
+  </div>
+</div>
+`;
+
+exports[`click and show header 1`] = `
+<div>
+  <div
+    class="bg"
+  >
+    <button
+      class="btn btn-primary button"
+    >
+      Modal
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      top
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      header
+    </button>
+    <div
+      class="modalBg"
+    >
+      <div
+        class="allModal myModal"
+      >
+        <h2>
+          Header
+        </h2>
+        <div
+          data-testid="content"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
+        </div>
+        <button
+          class="btn btn-primary btn-block"
+        >
+          關閉
+        </button>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary button"
+    >
+      top + animation
+    </button>
+  </div>
+</div>
+`;
+
+exports[`click and show top + animation 1`] = `
+<div>
+  <div
+    class="bg"
+  >
+    <button
+      class="btn btn-primary button"
+    >
+      Modal
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      top
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      header
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      top + animation
+    </button>
+    <div
+      class="modalBg"
+    >
+      <div
+        class="allModal myAnimation myAnimation1"
+      >
+        <div
+          data-testid="content"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
+        </div>
+        <button
+          class="btn btn-primary btn-block"
+        >
+          關閉
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`click and show top 1`] = `
+<div>
+  <div
+    class="bg"
+  >
+    <button
+      class="btn btn-primary button"
+    >
+      Modal
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      top
+    </button>
+    <div
+      class="modalBg"
+    >
+      <div
+        class="allModal myTop"
+      >
+        <div
+          data-testid="content"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
+        </div>
+        <button
+          class="btn btn-primary btn-block"
+        >
+          關閉
+        </button>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary button"
+    >
+      header
+    </button>
+    <button
+      class="btn btn-primary button"
+    >
+      top + animation
+    </button>
+  </div>
+</div>
+`;
