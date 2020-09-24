@@ -19,15 +19,24 @@ export default class Product extends Component {
       <div className="product">
         <div>{name}</div>
         <div>${price}</div>
-        <form onSubmit={this.handleSubmit}>
-          <input className="input"
+        <form
+          data-testid="form"
+          name={name}
+          onSubmit={this.handleSubmit}
+        >
+          <input
+            data-testid="Product"
+            className="input"
+            name={name}
             ref={element => this.productInput = element}
             type="number"
             placeholder="數量"
             min="0"
             max="99"
           />
-          <button className="btn btn-outline-primary btn-sm">加入購物車</button>
+          <button
+            className="btn btn-outline-primary btn-sm"
+          >加入購物車</button>
         </form>
       </div>
     );

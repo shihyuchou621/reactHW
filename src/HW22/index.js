@@ -73,13 +73,19 @@ export default class index extends Component {
           {productList
             .filter(product => product.amount > 0)
             .map((product) =>
-              <div className="productInCart" key={product.id}>
+              <div
+                data-testid={`subtotal${product.name}`}
+                className="productInCart"
+                key={product.id}
+              >
                 {product.name} x {product.amount} = ${product.price * product.amount}
                 <button
+                  data-testid={`${product.name}clear`}
                   className="buttonInCart btn btn-danger btn-sm"
                   onClick={this.clearAll.bind(this, product.id)}
                 >clear</button>
                 <button
+                  data-testid={`${product.name}-1`}
                   className="buttonInCart btn btn-warning btn-sm"
                   onClick={this.minusOne.bind(this, product.id)}
                   // minusOne的第一個參數會變product.id，原本的e則變成第二個參數
@@ -90,7 +96,7 @@ export default class index extends Component {
           {!!total&&
           <div>
             <div>===============</div>
-            <div>總計 ${total}</div>
+            <div data-testid="total">總計 ${total}</div>
           </div>
           }
         </div>
