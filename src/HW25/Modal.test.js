@@ -6,7 +6,7 @@ import {
   fireEvent,
 } from '@testing-library/react';
 
-import Modal from './Modal'; /** ← 是否應該戴"載"入 Product */
+import Modal from './Modal';
 
 afterEach(cleanup);
 
