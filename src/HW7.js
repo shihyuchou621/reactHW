@@ -14,6 +14,10 @@ class HW7 extends Component {
       .then(({ results: result }) => {
         this.setState({ result });
       });
+    /**
+       * .then(res => res.json())
+       * .then(this.setState);
+       */
   }
 
   componentDidMount() {
