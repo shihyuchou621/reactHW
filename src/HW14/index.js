@@ -23,7 +23,7 @@ export default class index extends Component {
   handleChange = ({ target }) => {
     this.setState({
       inputValue: target.value,
-      re: new RegExp(target.value, "i"), // 可以忽略大小寫
+      re: new RegExp(target.value, "i"), // i: 忽略大小寫
     });
   }
 
@@ -37,8 +37,6 @@ export default class index extends Component {
       state: { inputValue, result, re }
     } = this;
 
-
-
     return (
       <div className="container HW14">
         <div className="input-group mb-3">
@@ -48,6 +46,7 @@ export default class index extends Component {
             </span>
           </div>
           <input
+            data-testid="input"
             className="form-control"
             value={inputValue}
             placeholder="name..."
@@ -62,7 +61,7 @@ export default class index extends Component {
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.replace("https://pokeapi.co/api/v2/pokemon/","").replace("/","")}.png`}
                 alt={pokemon.name}
               />
-              <div>{pokemon.name}</div>
+              <div data-testid={pokemon.name}>{pokemon.name}</div>
             </div>
           )}
 
