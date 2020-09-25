@@ -128,3 +128,93 @@ exports[`animation should work 3`] = `
   </div>
 </div>
 `;
+
+exports[`showDots is false 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="item  animationHide"
+    >
+      <div>
+        1
+      </div>
+    </div>
+    <div
+      class="item  animationShow"
+    >
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`showDots is false 2`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="item  animationHide"
+    >
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="item  animationShow"
+    >
+      <div>
+        3
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`showDots is false 3`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="item  animationHide"
+    >
+      <div>
+        3
+      </div>
+    </div>
+    <div
+      class="item  animationShow"
+    >
+      <div>
+        1
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        2
+      </div>
+    </div>
+  </div>
+</div>
+`;
