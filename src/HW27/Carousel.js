@@ -16,9 +16,8 @@ export default class Carousel extends Component {
 
   cycle = () => {
     const { time } = this.props;
-    const { itemList, whichShow } = this.state;
-
     setInterval(() => {
+      const { itemList, whichShow } = this.state;
 
       this.setState({
         isMove: true,

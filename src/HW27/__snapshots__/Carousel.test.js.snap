@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`animation should work 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="item  animationHide"
+    >
+      <div>
+        1
+      </div>
+    </div>
+    <div
+      class="item  animationShow"
+    >
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        3
+      </div>
+    </div>
+    <div
+      class="dotsWrapper"
+    >
+      <div
+        class="dots"
+      />
+      <div
+        class="dots dotShow"
+      />
+      <div
+        class="dots"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animation should work 2`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="item  animationHide"
+    >
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="item  animationShow"
+    >
+      <div>
+        3
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        1
+      </div>
+    </div>
+    <div
+      class="dotsWrapper"
+    >
+      <div
+        class="dots"
+      />
+      <div
+        class="dots"
+      />
+      <div
+        class="dots dotShow"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animation should work 3`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="item  animationHide"
+    >
+      <div>
+        3
+      </div>
+    </div>
+    <div
+      class="item  animationShow"
+    >
+      <div>
+        1
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="dotsWrapper"
+    >
+      <div
+        class="dots dotShow"
+      />
+      <div
+        class="dots"
+      />
+      <div
+        class="dots"
+      />
+    </div>
+  </div>
+</div>
+`;
