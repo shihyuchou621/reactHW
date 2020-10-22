@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rbg should be correct 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="box"
+        style="background-color: rgb(35, 192, 80);"
+      />
+    </div>
+    <div
+      class="colorPicker"
+    >
+      <div
+        class="colorName"
+      >
+        red
+      </div>
+      <div
+        class="colorRange"
+      >
+        <input
+          data-testid="ColorPicker"
+          max="255"
+          min="0"
+          name="red"
+          type="range"
+          value="35"
+        />
+      </div>
+    </div>
+    <div
+      class="colorPicker"
+    >
+      <div
+        class="colorName"
+      >
+        green
+      </div>
+      <div
+        class="colorRange"
+      >
+        <input
+          data-testid="ColorPicker"
+          max="255"
+          min="0"
+          name="green"
+          type="range"
+          value="192"
+        />
+      </div>
+    </div>
+    <div
+      class="colorPicker"
+    >
+      <div
+        class="colorName"
+      >
+        blue
+      </div>
+      <div
+        class="colorRange"
+      >
+        <input
+          data-testid="ColorPicker"
+          max="255"
+          min="0"
+          name="blue"
+          type="range"
+          value="80"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+ul > li.done {
+  text-decoration: line-through;
+}
+
+// sass
+
+ul {
+  li {
+    cursor: pointer;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+
+@mixin style1($padding: 0px) {
+  padding: $padding;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.a {
+  color: red;
+  @include style1(10px);
+}
+
+.b {
+  color: blue;
+  @include style1;
+}
