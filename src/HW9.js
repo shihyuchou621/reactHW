@@ -28,11 +28,15 @@ export default class HW9 extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
+    this.interval = setInterval(() => {
       this.setState({
         ms: getMS(),
       });
     }, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   render() {

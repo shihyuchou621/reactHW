@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-/** props.name, rate, onChange */
-export class HW10Input extends Component {
-  render() {
+export function HW10Input(props) {
+  const {
+    name,
+    rate,
+    money,
+    dollar,
+    onChange,
+  } = props;
 
-    const {
-      name,
-      rate,
-      money,
-      dollar,
-      onChange,
-    } = this.props;
+  const value = dollar === name ? money: money * rate;
 
-    const value = dollar === name ? money: money * rate;
-
-    return (
-      <div>
-        <input
-          data-testid="HW10Input"
-          name={name}
-          value={value}
-          onChange={onChange}
-        />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <input
+        data-testid="HW10Input"
+        name={name}
+        value={value}
+        onChange={onChange}
+      />
+    </div>
+  );
 }

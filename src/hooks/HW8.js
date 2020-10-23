@@ -1,32 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-export default class HW8 extends Component {
-  constructor() {
-    super();
-    this.state = {
-      sum: 0,
-    };
-  }
+export function Sumofbuttons() {
+  const [ sum, setSum ] = useState(0);
 
-  handleClick = sum => {
-    this.setState({ sum });
-  }
+  const handleClick = n => {
+    setSum(sum + n);
+  };
 
-  render() {
-    const {
-      handleClick,
-      state: { sum },
-    } = this;
-
-    return (
-      <>
-        <div>
-          {[...Array(9 + 1).keys()].slice(1).map(n =>
-            <button key={n} onClick={handleClick.bind(this, sum + n)}>{n}</button>
-          )}
-        </div>
-        <div data-testid="sum">{sum}</div>
-      </>
-    );
-  }
+  return (
+    <>
+      <div>
+        {[...Array(9 + 1).keys()].slice(1).map((n) =>
+          <button onClick={() => handleClick(n)}>
+            {n}
+          </button>
+        )}
+      </div>
+      <div>{sum}</div>
+    </>
+  );
 }

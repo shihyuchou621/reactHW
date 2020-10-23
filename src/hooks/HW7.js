@@ -1,41 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-class HW7 extends Component {
-  constructor() {
-    super();
-    this.state = {
-      result: [],
-    };
-  }
+export default function HW7() {
+  const [ result , setResult ] = useState([]);
 
-  fetchData = () => {
+  const fetchData = () => {
     fetch('https://randomuser.me/api/?results=25')
       .then(res => res.json())
       .then(({ results: result }) => {
-        this.setState({ result });
+        setResult(result);
       });
-    /**
-       * .then(res => res.json())
-       * .then(this.setState);
-       */
-  }
+  };
 
-  componentDidMount() {
-    this.fetchData();
-  }
+  const handleClick = () => {
+    fetchData();
+  };
 
-  /** 程式的執行順序 */
-  handleClick = () => {
-    this.fetchData();
-  }
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  render() {
-    const {
-      handleClick,
-      state: { result }
-    } = this;
-
-    return (
+  return (
+    <div>
       <div>
         <button className="btn btn-primary" onClick={handleClick}>
           Update List
@@ -67,17 +52,6 @@ class HW7 extends Component {
         </table>
 
       </div>
-    );
-  }
-
-}
-
-export default class printHW7 extends Component {
-  render() {
-    return (
-      <div>
-        <HW7 />
-      </div>
-    );
-  }
+    </div>
+  );
 }

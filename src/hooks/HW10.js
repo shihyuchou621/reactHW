@@ -1,49 +1,32 @@
-import React, { Component } from "react";
+import React, { useState } from 'react';
 
 import { HW10Input } from './HW10Input';
 
-export default class HW10 extends Component {
-  constructor() {
-    super();
-    this.state = {
-      money: 0,
-      dollar: 'ntd',
-    };
-  }
+export default function HW10() {
+  const [ money, setMoney ] = useState(0);
+  const [ dollar, setDollar] = useState('ntd');
 
-  handleChange = ({ target }) => {
-    this.setState({
-      money: target.value,
-      dollar: target.name,
-    });
+  const handleChange = ({ target }) => {
+    setMoney(target.value);
+    setDollar(target.name);
   };
 
-  render() {
-    const {
-      handleChange,
-      state: {money, dollar},
-    } = this;
-
-    // const ntd = dollar === "ntd" ? money : money * 30;
-    // const usd = dollar === "usd" ? money : money / 30;
-
-    return (
-      <>
-        <HW10Input
-          dollar={dollar}
-          money={money}
-          name="ntd"
-          rate={30}
-          onChange={handleChange}
-        />
-        <HW10Input
-          dollar={dollar}
-          money={money}
-          name="usd"
-          rate={1/30}
-          onChange={handleChange}
-        />
-      </>
-    );
-  }
+  return (
+    <div>
+      <HW10Input
+        dollar={dollar}
+        money={money}
+        name="ntd"
+        rate={30}
+        onChange={handleChange}
+      />
+      <HW10Input
+        dollar={dollar}
+        money={money}
+        name="usd"
+        rate={1/30}
+        onChange={handleChange}
+      />
+    </div>
+  );
 }
