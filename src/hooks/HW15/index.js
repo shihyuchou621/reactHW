@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import './style.css';
 
@@ -17,51 +17,32 @@ const getValue = (unit, item, lenth, denoRate) => {
     lenth * denoRate / item.rate;
 };
 
-export default class index extends Component {
-  constructor() {
-    super();
-    this.state = {
-      lenth: 0,
-      unit: 'mm',
-      denoRate: 1,
-    };
-  }
+export default function Index() {
 
-  handleChange = (name, rate, { target }) => {
-    this.setState({
-      unit: name,
-      denoRate: rate,
-      lenth: target.value,
-    });
+  const [lenth, setLenth] = useState(0);
+  const [unit, setUnit] = useState('mm');
+  const [denoRate, setDenoRate] = useState(1);
 
+
+  const handleChange = (name, rate, { target }) => {
+    setUnit(name);
+    setDenoRate(rate);
+    setLenth(target.value);
     // console.log(this.state.denoRate);
-
   };
 
-  render() {
-    const {
-      state: {
-        unit,
-        lenth,
-        denoRate,
-      },
-    } = this;
-
-    return (
-      <div className="container HW15">
-        <div>
-          {unitList.map(item =>
-            <LenthInput
-              key={item.unit}
-              name={item.unit}
-              value={getValue(unit, item, lenth, denoRate)}
-              onChange={this.handleChange.bind(this, item.unit, item.rate)}
-            />
-          )}
-        </div>
+  return (
+    <div className="container HW15">
+      <div>
+        {unitList.map(item =>
+          <LenthInput
+            key={item.unit}
+            name={item.unit}
+            value={getValue(unit, item, lenth, denoRate)}
+            onChange={(e) => handleChange(item.unit, item.rate, e)}
+          />
+        )}
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-// 運算式太複雜 or 必須在下一層才能運算

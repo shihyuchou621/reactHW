@@ -1,34 +1,33 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const getRandom = (max, min = 0) => {
   return ~~(Math.random() * (max - min + 1)) + min;
 };
 
-export default class Master extends Component {
+export default function Master() {
 
-  constructor() {
-    super();
-    this.state = {
-      num: getRandom(9)
-    };
-  }
+  const [num, setNum] = useState(getRandom(9));
 
-  tick = () => {
-    this.setState({ num: getRandom(9)});
-    setTimeout(() => {
-      this.tick();
+  let timeout;
+
+  const tick = () => {
+    setNum(getRandom(9));
+    timeout = setTimeout(() => {
+      tick();
     }, getRandom(1000, 500));
-  }
+  };
 
-  componentDidMount() {
-    this.tick();
-  }
+  useEffect(() => {
+    tick();
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []
+  );
 
-  render() {
-    return (
-      <div data-testid="num">
-        {this.state.num}
-      </div>
-    );
-  }
+  return (
+    <div data-testid="num">
+      {num}
+    </div>
+  );
 }

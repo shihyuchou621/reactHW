@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 const getRandom = () => {
   return ~~(Math.random() * 10);
@@ -6,44 +6,38 @@ const getRandom = () => {
 
 let random = getRandom();
 
-export default class Master extends Component {
-  constructor() {
-    super();
-    this.state = {
-      wrong: 0,
-      correct: 0,
-    };
-  }
+export default function Master() {
 
-  handleChange = ({ target: { value } }) => {
+  const [ans, setAns] = useState({
+    correct: 0,
+    wrong: 0,
+  });
+
+  const handleChange = ({ target: { value } }) => {
     const attr = +value === random ? 'correct': 'wrong';
 
     random = getRandom();
-    this.setState({
-      [attr]: this.state[attr] + 1,
+    setAns({
+      ...ans,
+      [attr]: ans[attr] + 1,
     });
+  };
 
-  }
-  render() {
-    const {
-      wrong,
-      correct,
-    } = this.state;
-    return (
-      <div>
-        <h3>{random}</h3>
-        <input
-          data-testid="input"
-          type="text"
-          value="" onChange={this.handleChange}
-        />
-        <div
-          data-testid="wrong"
-        >wrong: {wrong}</div>
-        <div
-          data-testid="correct"
-        >correct: {correct}</div>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <h3>{random}</h3>
+      <input
+        data-testid="input"
+        type="text"
+        value=""
+        onChange={handleChange}
+      />
+      <div
+        data-testid="wrong"
+      >wrong: {ans.wrong}</div>
+      <div
+        data-testid="correct"
+      >correct: {ans.correct}</div>
+    </div>
+  );
 }
