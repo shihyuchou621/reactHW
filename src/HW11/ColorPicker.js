@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-/**
- * props
- * - color: 'red', 'green', 'blue'
- * - value: 0 ~ 255
- * - onChange: function */
 export default class ColorPicker extends Component {
   render() {
 

@@ -14,7 +14,6 @@ exports[`click todo item 1`] = `
         <input
           class="form-control"
           data-testid="input"
-          style="text-decoration: line-through;"
           type="text"
           value=""
         />
@@ -71,7 +70,6 @@ exports[`click todo item twice 1`] = `
         <input
           class="form-control"
           data-testid="input"
-          style="text-decoration: line-through;"
           type="text"
           value=""
         />
@@ -128,7 +126,6 @@ exports[`submit blank space 1`] = `
         <input
           class="form-control"
           data-testid="input"
-          style="text-decoration: line-through;"
           type="text"
           value=" "
         />
@@ -180,7 +177,6 @@ exports[`submit nothing 1`] = `
         <input
           class="form-control"
           data-testid="input"
-          style="text-decoration: line-through;"
           type="text"
           value=""
         />
@@ -232,7 +228,6 @@ exports[`todolist should plus item 1`] = `
         <input
           class="form-control"
           data-testid="input"
-          style="text-decoration: line-through;"
           type="text"
           value=""
         />

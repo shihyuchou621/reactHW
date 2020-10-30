@@ -8,7 +8,6 @@ export default class index extends Component {
   constructor() {
     super();
     this.state = {
-      total: 0,
       productList:  [
         {id: 1, name: '橘子',   price: 20, amount: 0},
         {id: 2, name: '蓮霧',   price: 30, amount: 0},

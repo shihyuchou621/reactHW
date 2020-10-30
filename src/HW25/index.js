@@ -21,7 +21,6 @@ export default class index extends Component {
 
   render() {
     const { showIndex } = this.state;
-
     return (
       <div className="bg">
         <button

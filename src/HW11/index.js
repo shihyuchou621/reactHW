@@ -32,6 +32,8 @@ export default class HW11 extends Component {
       handleChange,
     } = this;
 
+    console.log(red,green,blue);
+
     return (
       <div>
         <div>
