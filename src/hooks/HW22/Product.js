@@ -1,44 +1,44 @@
-import React, { Component } from 'react';
+import React, { createRef }  from 'react';
 
 import './style.css';
 
-export default class Product extends Component {
-  handleSubmit = e => {
+
+export default function Product(props) {
+  const DOM = createRef();
+  const handleSubmit = e => {
     e.preventDefault();
-    this.props.onSubmit(this.props.index, +this.productInput.value);
-    this.productInput.value = "";
-  }
+    props.onSubmit(+DOM.current.value + props.amount);
+    DOM.current.value = "";
+  };
 
-  render() {
-    const {
-      name,
-      price,
-    } = this.props;
+  const {
+    name,
+    price,
+  } = props;
 
-    return (
-      <div className="product">
-        <div>{name}</div>
-        <div>${price}</div>
-        <form
-          data-testid="form"
+  return (
+    <div className="product">
+      <div>{name}</div>
+      <div>${price}</div>
+      <form
+        data-testid="form"
+        name={name}
+        onSubmit={handleSubmit}
+      >
+        <input
+          data-testid="Product"
+          className="input"
           name={name}
-          onSubmit={this.handleSubmit}
-        >
-          <input
-            data-testid="Product"
-            className="input"
-            name={name}
-            ref={element => this.productInput = element}
-            type="number"
-            placeholder="數量"
-            min="0"
-            max="99"
-          />
-          <button
-            className="btn btn-outline-primary btn-sm"
-          >加入購物車</button>
-        </form>
-      </div>
-    );
-  }
+          ref={DOM}
+          type="number"
+          placeholder="數量"
+          min="0"
+          max="99"
+        />
+        <button
+          className="btn btn-outline-primary btn-sm"
+        >加入購物車</button>
+      </form>
+    </div>
+  );
 }

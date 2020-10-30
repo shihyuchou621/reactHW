@@ -2,7 +2,7 @@ import React, { useState, createRef } from 'react';
 
 const DOM = createRef();
 
-export function TodoList() {
+export default function TodoList() {
   const [ result, setResult ] = useState([]);
 
   const handleSubmit = e => {
@@ -24,7 +24,7 @@ export function TodoList() {
       <ul>{result.map((todo, index) =>
         <li key={todo}>
           {todo}
-          <button onClick={() => handleClick(index)}>
+          <button onClick={handleClick.bind(this, index)}>
             remove
           </button>
         </li>)}

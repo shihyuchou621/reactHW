@@ -1,47 +1,36 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 
-export default class Gophers extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isG: Boolean(Math.round(Math.random())),
-    };
-  }
+export default function Gophers (props) {
+  const [isG, setIsG] = useState(Boolean(Math.round(Math.random())));
 
-  tick = () => {
-    this.setState({ isG: !this.state.isG });
-    this.timer = setTimeout(() => {
-      this.tick();
+  let timer;
+
+  const tick = () => {
+    setIsG(isG => !isG);
+    timer = setTimeout(() => {
+      tick();
     } , ~~(Math.random() * 4000) + 2000);
-  }
+  };
 
-  handleClick = () => {
-    const score = this.state.isG ? 1 : -1;
-    this.props.setScore(score);
-    this.setState({
-      isG: false,
-    });
+  const handleClick = () => {
+    props.setScore(isG ? 1 : -1);
+    setIsG(false);
+  };
 
-  }
+  useEffect(() => {
+    tick();
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
-  componentWillUnmount() {
-    clearTimeout(this.timer);
-  }
-
-  componentDidMount() {
-    this.tick();
-  }
-
-  render() {
-    const { isG } = this.state;
-    return (
-      <div
-        className={`Gophers ${isG ? 'pink': ''}`}
-        onClick={this.handleClick}
-      >
-        {isG ? 'G' : '-'}
-      </div>
-    );
-  }
+  return (
+    <div
+      className={`Gophers ${isG ? 'pink': ''}`}
+      onClick={handleClick}
+    >
+      {isG ? 'G' : '-'}
+    </div>
+  );
 }

@@ -1,37 +1,37 @@
 import cx from 'classnames';
 
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Modal extends Component {
-  render() {
-    const {
-      header,
-      position,
-      isAnimation,
-    } = this.props;
+export default function Modal(props) {
+  const {
+    header,
+    position,
+    isAnimation,
+    children,
+    onClose
+  } = props;
 
-    return (
-      <div className="modalBg">
-        <div className={cx("allModal", {
-          myModal: position === "center",
-          myTop: position === "top",
-          myAnimation: isAnimation,
-          myAnimation1: isAnimation,
-        })}>
-          {header &&
+  return (
+    <div className="modalBg">
+      <div className={cx("allModal", {
+        myModal: position === "center",
+        myTop: position === "top",
+        myAnimation: isAnimation,
+        myAnimation1: isAnimation,
+      })}>
+        {header &&
           <h2>{header}</h2>
-          }
-          <div data-testid="content">
-            {this.props.children}
-          </div>
-          <button
-            className="btn btn-primary btn-block"
-            onClick={this.props.onClose}
-          >
-            關閉
-          </button>
+        }
+        <div data-testid="content">
+          {children}
         </div>
+        <button
+          className="btn btn-primary btn-block"
+          onClick={onClose}
+        >
+            關閉
+        </button>
       </div>
-    );
-  }
+    </div>
+  );
 }

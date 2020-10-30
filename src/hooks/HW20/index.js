@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { createRef, useState } from 'react';
+
+const DOM = createRef();
 
 const getInitState = () => {
   return {
@@ -9,62 +11,57 @@ const getInitState = () => {
   };
 };
 
-export default class index extends Component {
-  constructor() {
-    super();
-    this.state = getInitState();
-  }
+export default function Index() {
+  const [
+    {min, max, answer, correct},
+    setState,
+  ] = useState(getInitState());
 
-  handleEnter = (e) => {
-    e.preventDefault(); // onsubmit預設會導頁(有重整效果)，加此行可避免導頁
+  const handleEnter = (e) => {
+    e.preventDefault();
     const formData = new FormData(e.target);
     const value = parseInt(formData.get('guess'));
-    const { answer } = this.state;
     const field = answer > value ? 'min':
       answer < value ? 'max':
         'correct';
-    this.setState({
+
+    setState(state => ({
+      ...state,
       [field]: value
-    });
+    }));
+    DOM.current.value = "";
 
-    // this.setState({
-    //   min: answer > value ? value : min,
-    //   max: answer < value ? value : max,
-    //   correct: answer === value ? 1 : 0,
-    // });
-    this.guessInput.value = "";
-  }
+  };
 
-  handleClick = () => {
-    this.setState(getInitState());
-  }
+  const handleClick = () => {
+    setState(getInitState());
+  };
 
-  render() {
-    return (
-      <div>
-        <h2 data-testid="range">現在範圍: {this.state.min} ~ {this.state.max}</h2>
-        <form
-          data-testid="form"
-          className="input-group mb-3"
-          onSubmit={this.handleEnter}
-        >
-          <input
-            data-testid="input"
-            name="guess"
-            disabled={false}
-            ref={element => this.guessInput = element} // 取得這個dom
-          />
-        </form>
-        <h2>
-          {/* correct為1才出現 */}
-          {!!this.state.correct &&
+  return (
+    <div>
+      <h2 data-testid="range">
+        現在範圍: {min} ~ {max}
+      </h2>
+      <form
+        data-testid="form"
+        className="input-group mb-3"
+        onSubmit={handleEnter}
+      >
+        <input
+          data-testid="input"
+          name="guess"
+          disabled={false}
+          ref={DOM}
+        />
+      </form>
+      <h2>
+        {!!correct &&
             <div data-testid="answer">
-              答對了！答案就是{this.state.answer}
-              <button onClick={this.handleClick}>再來一局</button>
+              答對了！答案就是{answer}
+              <button onClick={handleClick}>再來一局</button>
             </div>
-          }
-        </h2>
-      </div>
-    );
-  }
+        }
+      </h2>
+    </div>
+  );
 }

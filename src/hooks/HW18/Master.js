@@ -1,59 +1,49 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './style.scss';
 
-const t = +new Date();
+// const t = +new Date();
 
-export default class Master extends Component {
-  constructor() {
-    super();
-    this.state = {
-      score: 0,
-      isQ: false,
-    };
-  }
+export default function Master() {
+  const [score, setScore] = useState(0);
+  const [isQ, setIsQ] = useState(false);
 
-  tick = () => {
-    this.setState({ isQ: !this.state.isQ });
-    this.timer = setTimeout(() => {
-      this.tick();
+  let timer;
+
+  const tick = () => {
+    // console.log(isQ); // first isQ
+    setIsQ(isQ => !isQ); // setIsQ(!isQ) 原本的寫法會抓到最原始的isQ，所以每次抓都是false，而新寫法會抓到最新的isQ
+    timer = setTimeout(() => {
+      tick();
     }, ~~(Math.random() * 1500) + 500);
-  }
+  };
 
-  componentDidMount() {
-    this.tick();
-  }
+  useEffect(() => {
+    tick();
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
-  // 偵測到即將被移除時觸發
-  componentWillUnmount() {
-    clearTimeout(this.timer);
-  }
-
-  handleChange = ({ target: {value}}) => {
-    const { isQ, score } = this.state;
-    console.log(+new Date() - t, this.state.isQ);
+  const handleChange = ({ target: {value}}) => {
+    // console.log(+new Date() - t, this.state.isQ);
     const isCorrect = isQ && value.toUpperCase() === 'Q';
-    this.setState({
-      isQ: false,
-      score: score + (isCorrect ? 1: -1),
-    });
-  }
+    setScore(score + (isCorrect ? 1: -1));
+    setIsQ(false);
+  };
 
-  render() {
-    const { isQ, score } = this.state;
-    return (
-      <div>
-        <h3>{isQ ? 'Q': '-'}</h3>
-        <div data-testid="score">
+  return (
+    <div>
+      <h3>{isQ ? 'Q': '-'}</h3>
+      <div data-testid="score">
           score: {score}
-        </div>
-        <input
-          data-testid="input"
-          value=""
-          type="text"
-          onChange={this.handleChange}
-        />
       </div>
-    );
-  }
+      <input
+        data-testid="input"
+        value=""
+        type="text"
+        onChange={handleChange}
+      />
+    </div>
+  );
 }

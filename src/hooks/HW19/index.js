@@ -1,34 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import Gophers from './components/Gophers';
 
-export default class index extends Component {
-  constructor() {
-    super();
-    this.state = {
-      sumScore: 0,
-    };
-  }
+export default function Index() {
+  const [sumScore, setSumScore] = useState(0);
 
-  setScore = ( score ) => {
-    this.setState({
-      sumScore: this.state.sumScore + score,
-    });
-  }
+  const setScore = ( score ) => {
+    setSumScore(sumScore + score);
+  };
 
-  render() {
-    const {sumScore} = this.state;
-    return (
-      <div className="HW19">
-        <h1 data-testid="score" className="score">
-          {sumScore}
-        </h1>
-        <div className="wrapper">
-          {[...Array(9).keys()].map(index =>
-            <Gophers key={index} setScore={this.setScore} />
-          )}
-        </div>
+  return (
+    <div className="HW19">
+      <h1 data-testid="score" className="score">
+        {sumScore}
+      </h1>
+      <div className="wrapper">
+        {[...Array(9).keys()].map(index =>
+          <Gophers key={index} setScore={setScore} />
+        )}
       </div>
-    );
-  }
+    </div>
+  );
 }
