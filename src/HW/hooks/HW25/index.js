@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import './style.css';
+import cx from 'classnames';
+import style from './style.module.css';
 
 import Modal from './Modal';
 
@@ -15,9 +16,9 @@ export default function Index() {
   console.log(this);
 
   return (
-    <div className="bg">
+    <div className={style.bg}>
       <button
-        className="btn btn-primary button"
+        className={cx(style.button, "btn btn-primary")}
         onClick={setShowIndex.bind(this, 0)}
       >
           Modal
@@ -31,7 +32,7 @@ export default function Index() {
       </Modal>}
 
       <button
-        className="btn btn-primary button"
+        className={cx(style.button, "btn btn-primary")}
         onClick={setShowIndex.bind(this, 1)}
       >
           top
@@ -45,7 +46,7 @@ export default function Index() {
       </Modal>}
 
       <button
-        className="btn btn-primary button"
+        className={cx(style.button, "btn btn-primary")}
         onClick={setShowIndex.bind(this, 2)}
       >
           header
@@ -60,7 +61,7 @@ export default function Index() {
       </Modal>}
 
       <button
-        className="btn btn-primary button"
+        className={cx(style.button, "btn btn-primary")}
         onClick={setShowIndex.bind(this, 3)}
       >
           top + animation

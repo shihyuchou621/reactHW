@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Tooltip from './Tooltip';
 
-import './style.css';
+import style from './style.module.css';
 
 export default function Index() {
   return (
-    <div className="background">
+    <div className={style.background}>
       <div>
         <Tooltip at="top" text="我在上面">
           <button className="btn btn-primary">top</button>

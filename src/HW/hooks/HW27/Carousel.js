@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React, { useState, useEffect } from 'react';
 
-import './Carousel.css';
+import style from './Carousel.module.css';
 
 export default function Carousel(props) {
 
@@ -35,19 +35,19 @@ export default function Carousel(props) {
   }, []);
 
   return (
-    <div className="wrapper">
+    <div className={style.wrapper}>
       {itemList.map((item, index) =>
-        <div key={index} className={cx("item ", {
-          animationHide: index === 0 && isMove,
-          animationShow: index === 1 && isMove})}>
+        <div key={index} className={cx(style.item, {
+          [style.animationHide]: index === 0 && isMove,
+          [style.animationShow]: index === 1 && isMove})}>
           {item}
         </div>
       )}
       {props.showDots &&
-          <div className="dotsWrapper">
+          <div className={style.dotsWrapper}>
             {[...itemList.keys()].map(index =>
-              <div key={index} className={cx("dots", {
-                dotShow: index === whichShow,
+              <div key={index} className={cx(style.dots, {
+                [style.dotShow]: index === whichShow,
               })} />
             )}
           </div>

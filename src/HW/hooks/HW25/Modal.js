@@ -2,6 +2,8 @@ import cx from 'classnames';
 
 import React from 'react';
 
+import style from './style.module.css';
+
 export default function Modal(props) {
   const {
     header,
@@ -12,12 +14,12 @@ export default function Modal(props) {
   } = props;
 
   return (
-    <div className="modalBg">
-      <div className={cx("allModal", {
-        myModal: position === "center",
-        myTop: position === "top",
-        myAnimation: isAnimation,
-        myAnimation1: isAnimation,
+    <div className={style.modalBg}>
+      <div className={cx(style.allModal, {
+        [style.myModal]: position === "center",
+        [style.myTop]: position === "top",
+        [style.myAnimation]: isAnimation,
+        [style.myAnimation1]: isAnimation,
       })}>
         {header &&
           <h2>{header}</h2>
