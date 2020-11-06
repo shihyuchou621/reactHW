@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cm should change 1`] = `
+"<printHW4>
+  <div>
+    <HW4>
+      <div>
+        身高: 
+        <input name=\\"cm\\" value=\\"165\\" onChange={[Function (anonymous)]} />
+      </div>
+      <div>
+        體重: 
+        <input name=\\"kg\\" value=\\"\\" onChange={[Function (anonymous)]} />
+      </div>
+      <button onClick={[Function (anonymous)]}>
+        計算!
+      </button>
+      <div>
+        BMI: 
+         
+      </div>
+    </HW4>
+  </div>
+</printHW4>"
+`;
+
+exports[`kg should change 1`] = `
+"<printHW4>
+  <div>
+    <HW4>
+      <div>
+        身高: 
+        <input name=\\"cm\\" value=\\"\\" onChange={[Function (anonymous)]} />
+      </div>
+      <div>
+        體重: 
+        <input name=\\"kg\\" value=\\"50\\" onChange={[Function (anonymous)]} />
+      </div>
+      <button onClick={[Function (anonymous)]}>
+        計算!
+      </button>
+      <div>
+        BMI: 
+         
+      </div>
+    </HW4>
+  </div>
+</printHW4>"
+`;
+
+exports[`should HW4 1`] = `
+"<printHW4>
+  <div>
+    <HW4>
+      <div>
+        身高: 
+        <input name=\\"cm\\" value=\\"\\" onChange={[Function (anonymous)]} />
+      </div>
+      <div>
+        體重: 
+        <input name=\\"kg\\" value=\\"\\" onChange={[Function (anonymous)]} />
+      </div>
+      <button onClick={[Function (anonymous)]}>
+        計算!
+      </button>
+      <div>
+        BMI: 
+         
+      </div>
+    </HW4>
+  </div>
+</printHW4>"
+`;
+
+exports[`should calculate 1`] = `
+"<printHW4>
+  <div>
+    <HW4>
+      <div>
+        身高: 
+        <input name=\\"cm\\" value=\\"165\\" onChange={[Function (anonymous)]} />
+      </div>
+      <div>
+        體重: 
+        <input name=\\"kg\\" value=\\"50\\" onChange={[Function (anonymous)]} />
+      </div>
+      <button onClick={[Function (anonymous)]}>
+        計算!
+      </button>
+      <div>
+        BMI: 
+        18.37
+         
+      </div>
+    </HW4>
+  </div>
+</printHW4>"
+`;

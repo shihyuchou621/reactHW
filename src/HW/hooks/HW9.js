@@ -18,7 +18,7 @@ export const getCountDown = ms => {
     `;
 };
 
-export function NewYear() {
+export default function NewYear() {
   const [ ms, setMs] = useState(getMs());
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export function Sumofbuttons() {
+export default function Sumofbuttons() {
   const [ sum, setSum ] = useState(0);
 
   const handleClick = n => {

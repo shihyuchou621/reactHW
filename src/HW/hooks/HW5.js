@@ -2,7 +2,7 @@ import React, { useState, createRef } from 'react';
 
 const DOM = createRef();
 
-export function TodoList() {
+export default function TodoList() {
   const [ result, setResult ] = useState([]);
 
   const handleSubmit = (e) => {

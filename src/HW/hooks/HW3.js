@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 
-export function Counter() {
+export default function Counter() {
   const [ count, setCount ] = useState(0);
-  const [ result, setResult ] = useState([]);
+  const [ result, setResult ] = useState(0);
 
   const handleClick = () => {
     setCount(count + 1);
-    setResult([count + 1, ...result]);
+    setResult(result + count + 1);
   };
 
   return (
     <div>
       <button onClick={handleClick}>
-        submit
+        add it
       </button>
-      <ul>{result.map(value =>
-        <li key={value}>{value}</li>)}
-      </ul>
+      <div>
+        {result}
+      </div>
     </div>
   );
 }
-

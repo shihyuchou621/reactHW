@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // const cmDOM = createRef();
 // const kgDOM = createRef();
 
-export function Counter() {
+export default function Counter() {
   const [ data, setData ] = useState({
     cm: "",
     kg: "",
