@@ -8,16 +8,16 @@ export default function Master() {
 
   const [num, setNum] = useState(getRandom(9));
 
-  let timeout;
-
-  const tick = () => {
-    setNum(getRandom(9));
-    timeout = setTimeout(() => {
-      tick();
-    }, getRandom(1000, 500));
-  };
 
   useEffect(() => {
+    let timeout;
+
+    const tick = () => {
+      setNum(getRandom(9));
+      timeout = setTimeout(() => {
+        tick();
+      }, getRandom(1000, 500));
+    };
     tick();
     return () => {
       clearTimeout(timeout);

@@ -4,14 +4,6 @@ import style from './style.module.css';
 export default function Gophers (props) {
   const [isG, setIsG] = useState(Boolean(Math.round(Math.random())));
 
-  let timer;
-
-  const tick = () => {
-    setIsG(isG => !isG);
-    timer = setTimeout(() => {
-      tick();
-    } , ~~(Math.random() * 4000) + 2000);
-  };
 
   const handleClick = () => {
     props.setScore(isG ? 1 : -1);
@@ -19,6 +11,14 @@ export default function Gophers (props) {
   };
 
   useEffect(() => {
+    let timer;
+
+    const tick = () => {
+      setIsG(isG => !isG);
+      timer = setTimeout(() => {
+        tick();
+      } , ~~(Math.random() * 4000) + 2000);
+    };
     tick();
     return () => {
       clearTimeout(timer);
