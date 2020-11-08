@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React, { useState } from 'react';
 
-import './style.scss';
+import style from './style.module.scss';
 
 export default function Master() {
 
@@ -60,7 +60,7 @@ export default function Master() {
           <li
             key={todo.id}
             onClick={() => handleDone(todo)}
-            className={cx("list-group-item", { done: todo.done })}
+            className={cx("list-group-item", { [style.done]: todo.done })}
           >
             {todo.content}
           </li>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import './style.css';
+import style from './style.module.css';
 
 export default function Index() {
 
@@ -26,7 +26,7 @@ export default function Index() {
   }, []);
 
   return (
-    <div className="container HW14">
+    <div className={`container ${style.HW14}`}>
       <div className="input-group mb-3">
         <div className="input-group-prepend">
           <span className="input-group-text" id="basic-addon1">
@@ -44,7 +44,7 @@ export default function Index() {
       {result
         .filter(pokemon => re.test(pokemon.name))
         .map( pokemon =>
-          <div className="inline" key={pokemon.name}>
+          <div className={style.inline} key={pokemon.name}>
             <img
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.replace("https://pokeapi.co/api/v2/pokemon/","").replace("/","")}.png`}
               alt={pokemon.name}

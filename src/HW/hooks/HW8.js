@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 export default function Sumofbuttons() {
 
   const [ sum, setSum ] = useState(0);
@@ -13,12 +12,12 @@ export default function Sumofbuttons() {
     <>
       <div>
         {[...Array(9 + 1).keys()].slice(1).map((n) =>
-          <button onClick={() => handleClick(n)}>
+          <button className="btn btn-primary" onClick={() => handleClick(n)}>
             {n}
           </button>
         )}
       </div>
-      <div>{sum}</div>
+      <h1>{sum}</h1>
     </>
   );
 }

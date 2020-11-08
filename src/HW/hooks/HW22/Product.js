@@ -1,7 +1,6 @@
 import React, { createRef }  from 'react';
 
-import './style.css';
-
+import style from './style.module.css';
 
 export default function Product(props) {
   const DOM = createRef();
@@ -17,7 +16,7 @@ export default function Product(props) {
   } = props;
 
   return (
-    <div className="product">
+    <div className={style.product}>
       <div>{name}</div>
       <div>${price}</div>
       <form
@@ -27,7 +26,7 @@ export default function Product(props) {
       >
         <input
           data-testid="Product"
-          className="input"
+          className={style.input}
           name={name}
           ref={DOM}
           type="number"

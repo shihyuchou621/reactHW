@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './style.css';
+import style from './style.module.css';
 
 export default class index extends Component {
   constructor() {
@@ -49,7 +49,7 @@ export default class index extends Component {
     } = this;
 
     return (
-      <div className="container HW13">
+      <div className={`container ${style.HW13}`}>
 
         <form className="input-group mb-3" onSubmit={handleEnter}>
           <input
@@ -59,7 +59,7 @@ export default class index extends Component {
             placeholder="todo..."
             onChange={handleChange}
           />
-          <div class="input-group-append">
+          <div className="input-group-append">
             <button className="btn btn-outline-secondary" onClick={handleEnter}>Create!</button>
           </div>
         </form>
@@ -69,7 +69,7 @@ export default class index extends Component {
             <div
               className={
                 "list-group-item "
-                + (item.done ? "done" : "undone")}
+                + (item.done ? style.done : style.undone)}
               key={index}
               onClick={handleClick.bind(this, index)}
             >

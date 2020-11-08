@@ -2,7 +2,7 @@ import React, { useState }  from 'react';
 
 import ColorPicker from "./ColorPicker";
 
-import "./style.css";
+import style from "./style.module.css";
 
 const colorList = [
   'red',
@@ -32,7 +32,7 @@ export default function HW11() {
     <div>
       <div>
         <div
-          className="box"
+          className={style.box}
           style={{
             backgroundColor: `rgb(${red}, ${green}, ${blue})`,
           }}

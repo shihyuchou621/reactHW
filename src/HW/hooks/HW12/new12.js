@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './new12.css';
+import style from './new12.module.css';
 
 const tagList = [
   {name: 'tag1', content: "lorem 1"},
@@ -18,17 +18,17 @@ export default function New12() {
   };
 
   return (
-    <div className="HW12">
+    <div className={style.HW12}>
       {tagList.map((tag, index) =>
         <div
           key={index}
-          className={`tag-name${index === choiceIndex ? " choice" : ""}`}
+          className={`${tag.name} ${index === choiceIndex ? style.choice : ""}`}
           onClick={() => handleClick(index)}
         >
           {tag.name}
         </div>
       )}
-      <div className="content">
+      <div className={style.content}>
         {tagList[choiceIndex].content}
       </div>
     </div>

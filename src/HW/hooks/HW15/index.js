@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './style.css';
+import style from './style.module.css';
 
 import LenthInput from './LenthInput';
 
@@ -32,7 +32,7 @@ export default function Index() {
   };
 
   return (
-    <div className="container HW15">
+    <div className={`${style.container} ${style.HW15}`}>
       <div>
         {unitList.map(item =>
           <LenthInput

@@ -37,11 +37,20 @@
 
 .productInCart {
   /* width: 240px; */
-  height: 35px;
+  height: 45px;
   margin: 5px;
+  display: flex;
   /* border: 1px solid green; */
 }
 
+.subtotal {
+  flex: 1;
+}
+
 .buttonInCart {
-  float: right;
+  /* width: 100px; */
+  /* float: right; */
+  height: fit-content;
+  margin-top: 0;
+  margin-bottom: 0;
 }

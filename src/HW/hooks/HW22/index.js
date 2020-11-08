@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-import './style.css';
+import style from './style.module.css';
+
+import cx from 'classnames';
 
 import Product from './Product';
 
@@ -16,8 +18,9 @@ export default function Index() {
   // const getIndex = id =>
   //   productList.findIndex( ({id: pid}) => pid === id );
 
-  const setCart = (index, value) => {
+  const setCart = (id, value) => {
     const newProductList = [...productList];
+    const index = newProductList.findIndex(product => product.id === id);
     newProductList[index].amount = value;
     setProductList(newProductList);
   };
@@ -45,8 +48,8 @@ export default function Index() {
     .reduce((a,b) => a+b);
 
   return (
-    <div className="container">
-      <div className="productArea">
+    <div className={style.container}>
+      <div className={style.productArea}>
         {productList.map((product, index) =>
           <Product
             key={index}
@@ -54,29 +57,29 @@ export default function Index() {
             price={product.price}
             amount={product.amount}
             index={index}
-            onSubmit={setCart.bind(this, index)}
+            onSubmit={setCart.bind(this, product.id)}
           />
         )}
       </div>
-      <div className="cartArea">
+      <div className={style.cartArea}>
         {productList
           .filter(({amount}) => amount > 0)
           .map(({id, name , amount, ...product}, index) =>
             <div
               data-testid={`subtotal${name}`}
-              className="productInCart"
+              className={style.productInCart}
               key={id}
             >
-              {name} x {amount} = ${product.price * amount}
+              <span className={style.subtotal}>{name} x {amount} = ${product.price * amount}</span>
               <button
                 data-testid={`${name}clear`}
-                className="buttonInCart btn btn-danger btn-sm"
-                onClick={setCart.bind(this, index, 0)}
+                className={cx(style.buttonInCart, " btn btn-danger btn-sm")}
+                onClick={setCart.bind(this, id, 0)}
               >clear</button>
               <button
                 data-testid={`${name}-1`}
-                className="buttonInCart btn btn-warning btn-sm"
-                onClick={setCart.bind(this, index, amount - 1)}
+                className={cx(style.buttonInCart, " btn btn-warning btn-sm")}
+                onClick={setCart.bind(this, id, amount - 1)}
                 // minusOne的第一個參數會變product.id，原本的e則變成第二個參數
               >-1</button>
             </div>

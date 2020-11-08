@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './style.css';
+
+import style from './style.module.css';
+
 import Gophers from './components/Gophers';
 
 export default function Index() {
@@ -10,11 +12,11 @@ export default function Index() {
   };
 
   return (
-    <div className="HW19">
-      <h1 data-testid="score" className="score">
+    <div className={style.HW19}>
+      <h1 data-testid={style.score} className={style.score}>
         {sumScore}
       </h1>
-      <div className="wrapper">
+      <div className={style.wrapper}>
         {[...Array(9).keys()].map(index =>
           <Gophers key={index} setScore={setScore} />
         )}

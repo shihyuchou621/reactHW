@@ -13,6 +13,7 @@ export function HW10Input(props) {
 
   return (
     <div>
+      {name}
       <input
         data-testid="HW10Input"
         name={name}

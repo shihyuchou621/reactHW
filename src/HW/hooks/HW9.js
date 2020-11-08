@@ -36,7 +36,7 @@ export default function NewYear() {
 
   return (
     <div>
-      離2021跨年還有: {getCountDown(ms)}
+      <h1>離2021跨年還有: {getCountDown(ms)}</h1>
     </div>
   );
 }

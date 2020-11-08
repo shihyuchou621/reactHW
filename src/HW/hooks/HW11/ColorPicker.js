@@ -1,5 +1,5 @@
 import React from 'react';
-
+import style from './style.module.css';
 export default function ColorPicker(props) {
 
   const {
@@ -10,9 +10,9 @@ export default function ColorPicker(props) {
   } = props;
 
   return (
-    <div className="colorPicker">
-      <div className="colorName">{color}</div>
-      <div className="colorRange">
+    <div className={style.colorPicker}>
+      <div className={style.colorName}>{color}</div>
+      <div className={style.colorRange}>
         <input
           data-testid="ColorPicker"
           min="0"

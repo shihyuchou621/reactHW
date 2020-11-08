@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
+import style from './style.module.css';
 
 export default function Gophers (props) {
   const [isG, setIsG] = useState(Boolean(Math.round(Math.random())));
@@ -27,7 +27,7 @@ export default function Gophers (props) {
 
   return (
     <div
-      className={`Gophers ${isG ? 'pink': ''}`}
+      className={`${style.Gophers} ${isG ? style.pink : ''}`}
       onClick={handleClick}
     >
       {isG ? 'G' : '-'}

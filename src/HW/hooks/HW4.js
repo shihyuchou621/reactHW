@@ -21,7 +21,7 @@ export default function Counter() {
   const handleClick = () => {
     setData({
       ...data,
-      bmi: data.kg / data.cm / data.cm * 10000,
+      bmi: Math.round(data.kg / data.cm / data.cm * 1000000) / 100,
     });
   };
 

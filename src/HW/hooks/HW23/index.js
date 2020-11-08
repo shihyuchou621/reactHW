@@ -30,7 +30,7 @@ export default function Index() {
         </div>
         <div>
           <img
-            className={cx(style,planet, style.moon, {
+            className={cx(style.planet, style.moon, {
               [style.show]: !isDay,
               [style.hide]: isDay,
             })}

@@ -6,10 +6,10 @@ import style from './style.module.css';
 
 export default ({ at, text, children }) => (
 
-  <span className="wrapper">
+  <span className={style.wrapper}>
     {children}
     <div
-      className={cx(style.tooltips, [style.at])}
+      className={cx(style.tooltips, style[at])}
     >{text}</div>
   </span>
 );
