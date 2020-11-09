@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should HW1 1`] = `
+<div>
+  <div>
+    <button>
+      counter: 
+      0
+    </button>
+  </div>
+</div>
+`;
+
+exports[`should simulate onClick event 1`] = `
+<div>
+  <div>
+    <button>
+      counter: 
+      1
+    </button>
+  </div>
+</div>
+`;
