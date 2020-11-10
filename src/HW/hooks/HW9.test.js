@@ -1,8 +1,9 @@
 import React from 'react';
+import { act } from 'react-dom/test-utils';
 import { render, cleanup } from '@testing-library/react';
 
 import HW, {
-  getMS,
+  getMs,
   getCountDown,
 } from './HW9';
 
@@ -10,21 +11,20 @@ afterEach(cleanup);
 
 test('should countdown', () => {
   jest.useFakeTimers();
-  const { container } = render(<HW />);
+  act(() => {
+    const { container } = render(<HW />);
+    expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMs())}`);
 
-  // const getMS = () =>
-  // +new Date(`${new Date().getFullYear() + 1}/01/01`) - +new Date();
-  expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMS())}`);
+    jest.advanceTimersByTime(1000);
+    expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMs())}`);
 
-  jest.advanceTimersByTime(1000);
-  expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMS())}`);
+    jest.advanceTimersByTime(1000);
+    expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMs())}`);
 
-  jest.advanceTimersByTime(1000);
-  expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMS())}`);
+    jest.advanceTimersByTime(1000);
+    expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMs())}`);
 
-  jest.advanceTimersByTime(1000);
-  expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMS())}`);
-
-  jest.advanceTimersByTime(1000);
-  expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMS())}`);
+    jest.advanceTimersByTime(1000);
+    expect(container.textContent).toBe(`離2021跨年還有: ${getCountDown(getMs())}`);
+  });
 });
