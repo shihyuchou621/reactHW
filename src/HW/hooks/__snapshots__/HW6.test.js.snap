@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be deleted 1`] = `
+"<TodoList>
+  <div>
+    <form onSubmit={[Function: handleSubmit]}>
+      todo: 
+      <input />
+    </form>
+    <ul />
+  </div>
+</TodoList>"
+`;
+
+exports[`should have blank in list 1`] = `
+"<TodoList>
+  <div>
+    <form onSubmit={[Function: handleSubmit]}>
+      todo: 
+      <input />
+    </form>
+    <ul>
+      <li>
+        <button onClick={[Function: bound handleClick]}>
+          remove
+        </button>
+      </li>
+      <li>
+        <button onClick={[Function: bound handleClick]}>
+          remove
+        </button>
+      </li>
+    </ul>
+  </div>
+</TodoList>"
+`;
+
+exports[`should have list 1`] = `
+"<TodoList>
+  <div>
+    <form onSubmit={[Function: handleSubmit]}>
+      todo: 
+      <input />
+    </form>
+    <ul>
+      <li>
+        <button onClick={[Function: bound handleClick]}>
+          remove
+        </button>
+      </li>
+    </ul>
+  </div>
+</TodoList>"
+`;
+
+exports[`should have lists 1`] = `
+"<TodoList>
+  <div>
+    <form onSubmit={[Function: handleSubmit]}>
+      todo: 
+      <input />
+    </form>
+    <ul>
+      <li>
+        <button onClick={[Function: bound handleClick]}>
+          remove
+        </button>
+      </li>
+      <li>
+        <button onClick={[Function: bound handleClick]}>
+          remove
+        </button>
+      </li>
+    </ul>
+  </div>
+</TodoList>"
+`;
+
+exports[`value should change 1`] = `
+"<TodoList>
+  <div>
+    <form onSubmit={[Function: handleSubmit]}>
+      todo: 
+      <input />
+    </form>
+    <ul />
+  </div>
+</TodoList>"
+`;

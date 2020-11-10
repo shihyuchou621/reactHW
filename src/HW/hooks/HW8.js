@@ -12,12 +12,12 @@ export default function Sumofbuttons() {
     <>
       <div>
         {[...Array(9 + 1).keys()].slice(1).map((n) =>
-          <button className="btn btn-primary" onClick={() => handleClick(n)}>
+          <button key={n} className="btn btn-primary" onClick={() => handleClick(n)}>
             {n}
           </button>
         )}
       </div>
-      <h1>{sum}</h1>
+      <div data-testid="sum">{sum}</div>
     </>
   );
 }

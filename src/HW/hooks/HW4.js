@@ -27,8 +27,8 @@ export default function Counter() {
 
   return (
     <>
-      <div>身高: <input name="cm" value={data.cm} onChange={handleChange} /></div>
-      <div>體重: <input name="kg" value={data.kg} onChange={handleChange} /></div>
+      <div>身高: <input data-testid="cm" name="cm" value={data.cm} onChange={handleChange} /></div>
+      <div>體重: <input data-testid="kg" name="kg" value={data.kg} onChange={handleChange} /></div>
       <button onClick={handleClick}>計算!</button>
       <div>BMI: {data.bmi} </div>
     </>

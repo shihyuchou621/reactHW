@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list should be sum of AS 1`] = `
+<div>
+  <div>
+    <button>
+      add it
+    </button>
+    <div>
+      6
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should HW3 1`] = `
+<div>
+  <div>
+    <button>
+      add it
+    </button>
+    <div>
+      0
+    </div>
+  </div>
+</div>
+`;

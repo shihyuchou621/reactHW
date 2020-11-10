@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`onChange should work 1`] = `
+<div>
+  <div>
+    usd
+    <input
+      data-testid="HW10Input"
+      name="usd"
+      value="1"
+    />
+  </div>
+</div>
+`;
+
+exports[`should have correct value 1`] = `
+<div>
+  <div>
+    usd
+    <input
+      data-testid="HW10Input"
+      name="usd"
+      value="3"
+    />
+  </div>
+</div>
+`;

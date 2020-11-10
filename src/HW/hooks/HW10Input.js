@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function HW10Input(props) {
+export default function HW10Input(props) {
   const {
     name,
     rate,
