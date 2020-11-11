@@ -1,11 +1,6 @@
 import React from 'react';
-
-import {
-  cleanup,
-  render,
-  fireEvent,
-} from '@testing-library/react';
-
+import { render, cleanup } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import LenthInput from './LenthInput';
 
 afterEach(cleanup);
@@ -19,10 +14,10 @@ test('onChange should work', () => {
     />
   );
 
-  fireEvent.change(getByTestId('LenthInput'), { target: {
-    value: '5'
-  }});
-  // console.log(onChange.mock);
+  userEvent.type(getByTestId('LenthInput'), '502');
+  console.log(onChange.mock.results);
   expect(onChange.mock.results[0].value).toBe('5');
+  expect(onChange.mock.results[1].value).toBe('50');
+  expect(onChange.mock.results[2].value).toBe('502');
   // expect(true).toBeTruthy();
 });
