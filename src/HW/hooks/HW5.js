@@ -15,7 +15,7 @@ export default function TodoList() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        todo: <input ref={DOM} />
+        todo: <input data-testid='input' ref={DOM} />
       </form>
       <ul>{result.map(todo =>
         <li key={todo}>{todo}</li>)}
