@@ -19,7 +19,9 @@ export default function Index() {
 
   const handleEnter = (e) => {
     e.preventDefault();
+    // ↓取得<form>裡面所有的資料，包含<input>等等
     const formData = new FormData(e.target);
+    // ↓用name取得，相當於表單的欄位名稱
     const value = parseInt(formData.get('guess'));
     const field = answer > value ? 'min':
       answer < value ? 'max':
