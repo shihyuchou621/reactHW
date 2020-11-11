@@ -49,7 +49,10 @@ export default function Master() {
             onChange={handleChange}
           />
           <div className="input-group-append">
-            <button className="btn btn-outline-secondary">
+            <button
+              data-testid="button"
+              className="btn btn-outline-secondary"
+            >
                 save
             </button>
           </div>

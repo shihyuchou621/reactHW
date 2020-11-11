@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click todo item 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form
+      data-testid="form"
+    >
+      <div
+        class="input-group mb-3"
+      >
+        <input
+          class="form-control"
+          data-testid="input"
+          type="text"
+          value=""
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            class="btn btn-outline-secondary"
+            data-testid="button"
+          >
+            save
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item done"
+      >
+        todo
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項1
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項2
+      </li>
+      <li
+        class="list-group-item done"
+      >
+        待辦事項3
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`click todo item twice 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form
+      data-testid="form"
+    >
+      <div
+        class="input-group mb-3"
+      >
+        <input
+          class="form-control"
+          data-testid="input"
+          type="text"
+          value=""
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            class="btn btn-outline-secondary"
+            data-testid="button"
+          >
+            save
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
+        todo
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項1
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項2
+      </li>
+      <li
+        class="list-group-item done"
+      >
+        待辦事項3
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`submit blank space 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form
+      data-testid="form"
+    >
+      <div
+        class="input-group mb-3"
+      >
+        <input
+          class="form-control"
+          data-testid="input"
+          type="text"
+          value=" "
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            class="btn btn-outline-secondary"
+            data-testid="button"
+          >
+            save
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
+        待辦事項1
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項2
+      </li>
+      <li
+        class="list-group-item done"
+      >
+        待辦事項3
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`submit nothing 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form
+      data-testid="form"
+    >
+      <div
+        class="input-group mb-3"
+      >
+        <input
+          class="form-control"
+          data-testid="input"
+          type="text"
+          value=""
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            class="btn btn-outline-secondary"
+            data-testid="button"
+          >
+            save
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
+        待辦事項1
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項2
+      </li>
+      <li
+        class="list-group-item done"
+      >
+        待辦事項3
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`todolist should plus item 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form
+      data-testid="form"
+    >
+      <div
+        class="input-group mb-3"
+      >
+        <input
+          class="form-control"
+          data-testid="input"
+          type="text"
+          value=""
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            class="btn btn-outline-secondary"
+            data-testid="button"
+          >
+            save
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
+        todo
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項1
+      </li>
+      <li
+        class="list-group-item"
+      >
+        待辦事項2
+      </li>
+      <li
+        class="list-group-item done"
+      >
+        待辦事項3
+      </li>
+    </ul>
+  </div>
+</div>
+`;
