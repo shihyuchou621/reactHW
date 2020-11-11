@@ -14,8 +14,8 @@ export default function Master() {
     let timer;
     const tick = () => {
     // console.log(isQ); // first isQ
-      setIsQ(isQ => !isQ); // setIsQ(!isQ) 原本的寫法會抓到最原始的isQ，所以每次抓都是false，而新寫法會抓到最新的isQ
       timer = setTimeout(() => {
+        setIsQ(isQ => !isQ); // setIsQ(!isQ) 原本的寫法會抓到最原始的isQ，所以每次抓都是false，而新寫法會抓到最新的isQ
         tick();
       }, ~~(Math.random() * 1500) + 500);
     };
@@ -29,9 +29,12 @@ export default function Master() {
   const handleChange = ({ target: {value}}) => {
     // console.log(+new Date() - t, this.state.isQ);
     const isCorrect = isQ && value.toUpperCase() === 'Q';
+    // console.log(`isQ: ${isQ}, value: ${value}, isCorrect: ${isCorrect}`);
     setScore(score + (isCorrect ? 1: -1));
     setIsQ(false);
   };
+
+  // console.log(score);
 
   return (
     <div>
