@@ -13,7 +13,6 @@ export default function Index() {
   // const handleClick = showIndex => {
   //   setShowIndex(showIndex);
   // };
-  console.log(this);
 
   return (
     <div className={style.bg}>
