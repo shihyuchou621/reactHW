@@ -6,7 +6,7 @@ exports[`rbg should be correct 1`] = `
     <div>
       <div
         class="box"
-        style="background-color: rgb(35, 92, 80);"
+        style="background-color: rgb(255, 255, 255);"
       />
     </div>
     <div
@@ -26,7 +26,7 @@ exports[`rbg should be correct 1`] = `
           min="0"
           name="red"
           type="range"
-          value="35"
+          value="12835"
         />
       </div>
     </div>
@@ -47,7 +47,7 @@ exports[`rbg should be correct 1`] = `
           min="0"
           name="green"
           type="range"
-          value="92"
+          value="12892"
         />
       </div>
     </div>
@@ -68,7 +68,7 @@ exports[`rbg should be correct 1`] = `
           min="0"
           name="blue"
           type="range"
-          value="80"
+          value="12880"
         />
       </div>
     </div>

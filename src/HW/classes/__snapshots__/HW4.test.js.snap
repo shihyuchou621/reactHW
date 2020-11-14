@@ -6,13 +6,13 @@ exports[`cm should change 1`] = `
     <HW4>
       <div>
         身高: 
-        <input name=\\"cm\\" value=\\"165\\" onChange={[Function (anonymous)]} />
+        <input name=\\"cm\\" value=\\"165\\" onChange={[Function]} />
       </div>
       <div>
         體重: 
-        <input name=\\"kg\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <input name=\\"kg\\" value=\\"\\" onChange={[Function]} />
       </div>
-      <button onClick={[Function (anonymous)]}>
+      <button onClick={[Function]}>
         計算!
       </button>
       <div>
@@ -30,13 +30,13 @@ exports[`kg should change 1`] = `
     <HW4>
       <div>
         身高: 
-        <input name=\\"cm\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <input name=\\"cm\\" value=\\"\\" onChange={[Function]} />
       </div>
       <div>
         體重: 
-        <input name=\\"kg\\" value=\\"50\\" onChange={[Function (anonymous)]} />
+        <input name=\\"kg\\" value=\\"50\\" onChange={[Function]} />
       </div>
-      <button onClick={[Function (anonymous)]}>
+      <button onClick={[Function]}>
         計算!
       </button>
       <div>
@@ -54,13 +54,13 @@ exports[`should HW4 1`] = `
     <HW4>
       <div>
         身高: 
-        <input name=\\"cm\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <input name=\\"cm\\" value=\\"\\" onChange={[Function]} />
       </div>
       <div>
         體重: 
-        <input name=\\"kg\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <input name=\\"kg\\" value=\\"\\" onChange={[Function]} />
       </div>
-      <button onClick={[Function (anonymous)]}>
+      <button onClick={[Function]}>
         計算!
       </button>
       <div>
@@ -78,13 +78,13 @@ exports[`should calculate 1`] = `
     <HW4>
       <div>
         身高: 
-        <input name=\\"cm\\" value=\\"165\\" onChange={[Function (anonymous)]} />
+        <input name=\\"cm\\" value=\\"165\\" onChange={[Function]} />
       </div>
       <div>
         體重: 
-        <input name=\\"kg\\" value=\\"50\\" onChange={[Function (anonymous)]} />
+        <input name=\\"kg\\" value=\\"50\\" onChange={[Function]} />
       </div>
-      <button onClick={[Function (anonymous)]}>
+      <button onClick={[Function]}>
         計算!
       </button>
       <div>

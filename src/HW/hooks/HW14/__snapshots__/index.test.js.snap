@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should fetch data and get pokemon 1`] = `
+<div>
+  <div
+    class="container HW14"
+  >
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          keyword
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="input"
+        placeholder="name..."
+        value="bulb"
+      />
+    </div>
+    <div
+      class="inline"
+    >
+      <img
+        alt="bulbasaur"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+      />
+      <div
+        data-testid="bulbasaur"
+      >
+        bulbasaur
+      </div>
+    </div>
+  </div>
+</div>
+`;

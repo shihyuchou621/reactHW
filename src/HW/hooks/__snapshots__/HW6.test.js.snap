@@ -1,89 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should be deleted 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul />
   </div>
-</TodoList>"
+</div>
 `;
 
 exports[`should have blank in list 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul>
       <li>
-        <button onClick={[Function: bound handleClick]}>
+        
+        <button
+          data-testid="button0"
+        >
           remove
         </button>
       </li>
       <li>
-        <button onClick={[Function: bound handleClick]}>
+        qwerty
+        <button
+          data-testid="button1"
+        >
           remove
         </button>
       </li>
     </ul>
   </div>
-</TodoList>"
+</div>
 `;
 
 exports[`should have list 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul>
       <li>
-        <button onClick={[Function: bound handleClick]}>
+        qwerty
+        <button
+          data-testid="button0"
+        >
           remove
         </button>
       </li>
     </ul>
   </div>
-</TodoList>"
+</div>
 `;
 
 exports[`should have lists 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul>
       <li>
-        <button onClick={[Function: bound handleClick]}>
+        zxcvbn
+        <button
+          data-testid="button0"
+        >
           remove
         </button>
       </li>
       <li>
-        <button onClick={[Function: bound handleClick]}>
+        qwerty
+        <button
+          data-testid="button1"
+        >
           remove
         </button>
       </li>
     </ul>
   </div>
-</TodoList>"
+</div>
 `;
 
 exports[`value should change 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul />
   </div>
-</TodoList>"
+</div>
 `;

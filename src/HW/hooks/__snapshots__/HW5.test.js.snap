@@ -1,57 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should have blank in list 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul>
       <li />
-      <li />
+      <li>
+        qwerty
+      </li>
     </ul>
   </div>
-</TodoList>"
-`;
-
-exports[`should have list 1`] = `
-"<TodoList>
-  <div>
-    <form onSubmit={[Function: handleSubmit]}>
-      todo: 
-      <input />
-    </form>
-    <ul>
-      <li />
-    </ul>
-  </div>
-</TodoList>"
+</div>
 `;
 
 exports[`should have lists 1`] = `
-"<TodoList>
+<div>
   <div>
-    <form onSubmit={[Function: handleSubmit]}>
+    <form>
       todo: 
-      <input />
+      <input
+        data-testid="input"
+      />
     </form>
     <ul>
-      <li />
-      <li />
+      <li>
+        zxcvbn
+      </li>
+      <li>
+        qwerty
+      </li>
     </ul>
   </div>
-</TodoList>"
-`;
-
-exports[`value should change 1`] = `
-"<TodoList>
-  <div>
-    <form onSubmit={[Function: handleSubmit]}>
-      todo: 
-      <input />
-    </form>
-    <ul />
-  </div>
-</TodoList>"
+</div>
 `;

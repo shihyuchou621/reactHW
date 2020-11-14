@@ -19,12 +19,15 @@ export default function TodoList() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        todo: <input ref={DOM} />
+        todo: <input data-testid="input" ref={DOM} />
       </form>
       <ul>{result.map((todo, index) =>
         <li key={todo}>
           {todo}
-          <button onClick={handleClick.bind(this, index)}>
+          <button
+            data-testid={`button${index}`}
+            onClick={handleClick.bind(this, index)}
+          >
             remove
           </button>
         </li>)}

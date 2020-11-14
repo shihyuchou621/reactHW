@@ -5,8 +5,8 @@ exports[`should have blank in list 1`] = `
   <div>
     <HW5>
       <div>
-        <form onSubmit={[Function (anonymous)]}>
-          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
         </form>
         <ul>
           <li />
@@ -25,8 +25,8 @@ exports[`should have list 1`] = `
   <div>
     <HW5>
       <div>
-        <form onSubmit={[Function (anonymous)]}>
-          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
         </form>
         <ul>
           <li>
@@ -44,8 +44,8 @@ exports[`should have lists 1`] = `
   <div>
     <HW5>
       <div>
-        <form onSubmit={[Function (anonymous)]}>
-          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function (anonymous)]} />
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"\\" onChange={[Function]} />
         </form>
         <ul>
           <li>
@@ -66,8 +66,8 @@ exports[`value should change 1`] = `
   <div>
     <HW5>
       <div>
-        <form onSubmit={[Function (anonymous)]}>
-          <input name=\\"inputValue\\" value=\\"qwerty\\" onChange={[Function (anonymous)]} />
+        <form onSubmit={[Function]}>
+          <input name=\\"inputValue\\" value=\\"qwerty\\" onChange={[Function]} />
         </form>
         <ul />
       </div>
