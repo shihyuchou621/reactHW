@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should have correct value 1`] = `
+<div>
+  <div
+    class="product"
+  >
+    <div>
+      橘子
+    </div>
+    <div>
+      $
+      20
+    </div>
+    <form
+      data-testid="form"
+      name="橘子"
+    >
+      <input
+        class="input"
+        data-testid="input"
+        max="99"
+        min="0"
+        name="橘子"
+        placeholder="數量"
+        type="number"
+      />
+      <button
+        class="btn btn-outline-primary btn-sm"
+      >
+        加入購物車
+      </button>
+    </form>
+  </div>
+</div>
+`;
