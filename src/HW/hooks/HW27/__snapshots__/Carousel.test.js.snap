@@ -49,14 +49,14 @@ exports[`animation should work 2`] = `
     class="wrapper"
   >
     <div
-      class="item"
+      class="item animationHide"
     >
       <div>
         2
       </div>
     </div>
     <div
-      class="item"
+      class="item animationShow"
     >
       <div>
         3
@@ -76,10 +76,10 @@ exports[`animation should work 2`] = `
         class="dots"
       />
       <div
-        class="dots dotShow"
+        class="dots"
       />
       <div
-        class="dots"
+        class="dots dotShow"
       />
     </div>
   </div>

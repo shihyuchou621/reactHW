@@ -34,6 +34,7 @@
   position: absolute;
   animation: show 500ms;
   animation-fill-mode: forwards;
+  /* 停在動畫最後一幀的狀態 */
   /* animation-iteration-count: infinite; */
 }
 

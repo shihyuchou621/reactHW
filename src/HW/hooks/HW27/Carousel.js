@@ -15,7 +15,7 @@ export default function Carousel(props) {
 
     const cycle = () => {
       const { time } = props;
-      timeout = setInterval(() => {
+      timeout = setTimeout(() => {
         setIsMove(true);
         setWhichShow(whichShow => ( whichShow + 1 ) % itemList.length);
 
@@ -32,7 +32,7 @@ export default function Carousel(props) {
     return () => {
       clearTimeout(timeout);
     };
-  }, [itemList, props]);
+  }, [itemList, props]); // useEffect裡面會用到的變數
 
   return (
     <div className={style.wrapper}>
