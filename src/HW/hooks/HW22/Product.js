@@ -25,7 +25,7 @@ export default function Product(props) {
         onSubmit={handleSubmit}
       >
         <input
-          data-testid="Product"
+          data-testid="input"
           className={style.input}
           name={name}
           ref={DOM}

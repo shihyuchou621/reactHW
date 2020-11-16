@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { HW10Input } from './HW10Input';
+import HW10Input from './HW10Input';
 
 export default function HW10() {
   const [ money, setMoney ] = useState(0);

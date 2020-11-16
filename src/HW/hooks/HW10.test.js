@@ -11,6 +11,7 @@ afterEach(cleanup);
 
 test('usd should change correctly', () => {
   const { container } = render(<HW />);
+
   userEvent.change(
     container.querySelector('input[name="ntd"]'),
     { target: { value: '90' } }

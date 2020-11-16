@@ -3,7 +3,6 @@ import { render, cleanup } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import HW from './HW8';
 
-
 afterEach(cleanup); // 跑完每個test之後都要執行cleanup(把測試完的component清空，避免後面的測試受到前面的影響)
 
 test('should plus correctly', () => {
