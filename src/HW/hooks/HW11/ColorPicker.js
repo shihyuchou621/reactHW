@@ -11,7 +11,7 @@ export default function ColorPicker(props) {
 
   return (
     <div className={style.colorPicker}>
-      <div className={style.colorName}>{color}</div>
+      <div className={style.colorName}>{`${color}(${value})`}</div>
       <div className={style.colorRange}>
         <input
           data-testid="ColorPicker"

@@ -22,8 +22,8 @@ export default function New12() {
       {tagList.map((tag, index) =>
         <div
           key={index}
-          className={`${tag.name} ${index === choiceIndex ? style.choice : ""}`}
-          onClick={() => handleClick(index)}
+          className={`${style.tagName} ${index === choiceIndex ? style.choice : ""}`}
+          onClick={handleClick.bind(this, index)}
         >
           {tag.name}
         </div>

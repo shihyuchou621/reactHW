@@ -26,12 +26,14 @@ function C(props) {
   );
 }
 
+// 把state傳給props
 const mapStateToProps = (state) => {
   return {
     num: state
   };
 };
 
+// 把事件傳給props
 const mapDispatchToProps = (dispatch) => {
   return {
     plus: () => dispatch(increment()),
@@ -40,6 +42,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(C);
+// C：要傳過去的Component
 
 // aaa(); // ==> return result?
 

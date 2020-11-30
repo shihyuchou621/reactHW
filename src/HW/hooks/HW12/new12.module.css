@@ -2,11 +2,11 @@
   padding-top: 30px;
   padding-left: 20px;
 }
-.tag-name:first-of-type {
+.tagName:first-of-type {
   margin-left: 10px;
 }
 
-.tag-name {
+.tagName {
   top: 1.5px;
   cursor: pointer;
   padding: 5px 10px;
@@ -14,11 +14,11 @@
   display: inline-block;
 }
 
-.tag-name:hover {
+.tagName:hover {
   background-color: #eee;
 }
 
-.tag-name.choice {
+.tagName.choice {
   background-color: #fff;
   border: 1px solid #ccc;
   border-bottom: none;

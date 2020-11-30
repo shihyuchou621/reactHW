@@ -13,3 +13,5 @@ export default function counter(state = 0, action) {
     return state;
   }
 }
+
+// return的東西會成為下一次進來的state(狀態)
