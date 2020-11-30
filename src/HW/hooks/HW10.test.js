@@ -12,19 +12,15 @@ afterEach(cleanup);
 test('usd should change correctly', () => {
   const { container } = render(<HW />);
 
-  userEvent.change(
-    container.querySelector('input[name="ntd"]'),
-    { target: { value: '90' } }
-  );
+  userEvent.type(
+    container.querySelector('input[name="ntd"]'), '90');
   // expect(getByTestId('usd')).toHaveTextContent('3');
   expect(container).toMatchSnapshot();
 });
 
 test('ntd should change correctly', () => {
   const { container } = render(<HW />);
-  userEvent.change(
-    container.querySelector('input[name="usd"]'),
-    { target: { value: '2' } }
-  );
+  userEvent.type(
+    container.querySelector('input[name="usd"]'), '2');
   expect(container).toMatchSnapshot();
 });

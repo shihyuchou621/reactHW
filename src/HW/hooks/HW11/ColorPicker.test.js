@@ -1,7 +1,11 @@
 import React from 'react';
 
-import { render, cleanup } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import {
+  cleanup,
+  render,
+  fireEvent,
+} from '@testing-library/react';
+
 import ColorPicker from './ColorPicker';
 
 afterEach(cleanup);
@@ -15,7 +19,9 @@ test('should change correctly', () => {
       onChange={onChange}
     />
   );
-  userEvent.type(getByTestId('ColorPicker'), '8');
-  expect(onChange.mock.results[0].value).toBe("8");
+  fireEvent.change(getByTestId('ColorPicker'), { target: {
+    value: '20'
+  }});
+  expect(onChange.mock.results[0].value).toBe("20");
   expect(container).toMatchSnapshot();
 });

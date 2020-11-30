@@ -6,22 +6,22 @@ exports[`content 1 should change correctly 1`] = `
     class="HW12"
   >
     <div
-      class="tag1 choice"
+      class="tagName choice"
     >
       tag1
     </div>
     <div
-      class="tag2 "
+      class="tagName "
     >
       tag2
     </div>
     <div
-      class="tag3 "
+      class="tagName "
     >
       tag3
     </div>
     <div
-      class="tag4 "
+      class="tagName "
     >
       tag4
     </div>
@@ -40,22 +40,22 @@ exports[`content 2 should change correctly 1`] = `
     class="HW12"
   >
     <div
-      class="tag1 "
+      class="tagName "
     >
       tag1
     </div>
     <div
-      class="tag2 choice"
+      class="tagName choice"
     >
       tag2
     </div>
     <div
-      class="tag3 "
+      class="tagName "
     >
       tag3
     </div>
     <div
-      class="tag4 "
+      class="tagName "
     >
       tag4
     </div>
@@ -74,22 +74,22 @@ exports[`content 3 should change correctly 1`] = `
     class="HW12"
   >
     <div
-      class="tag1 "
+      class="tagName "
     >
       tag1
     </div>
     <div
-      class="tag2 "
+      class="tagName "
     >
       tag2
     </div>
     <div
-      class="tag3 choice"
+      class="tagName choice"
     >
       tag3
     </div>
     <div
-      class="tag4 "
+      class="tagName "
     >
       tag4
     </div>
@@ -108,22 +108,22 @@ exports[`content 4 should change correctly 1`] = `
     class="HW12"
   >
     <div
-      class="tag1 "
+      class="tagName "
     >
       tag1
     </div>
     <div
-      class="tag2 "
+      class="tagName "
     >
       tag2
     </div>
     <div
-      class="tag3 "
+      class="tagName "
     >
       tag3
     </div>
     <div
-      class="tag4 choice"
+      class="tagName choice"
     >
       tag4
     </div>

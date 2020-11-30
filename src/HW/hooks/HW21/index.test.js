@@ -48,6 +48,6 @@ test('should give correct a & b', () => {
   userEvent.type(getByTestId("input"), '9876{enter}');
   expect(getByTestId("4A")).toHaveTextContent("答對了！遊戲結束，你要重新一局嗎？");
 
-  fireEvent.click(getByText("好!"));
+  userEvent.click(getByText("好!"));
   expect(getByTestId("resultList").children.length).toBe(0);
 });

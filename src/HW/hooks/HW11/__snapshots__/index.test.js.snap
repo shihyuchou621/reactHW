@@ -15,7 +15,7 @@ exports[`rbg should be correct 1`] = `
       <div
         class="colorName"
       >
-        red
+        red(12835)
       </div>
       <div
         class="colorRange"
@@ -36,7 +36,7 @@ exports[`rbg should be correct 1`] = `
       <div
         class="colorName"
       >
-        green
+        green(12892)
       </div>
       <div
         class="colorRange"
@@ -57,7 +57,7 @@ exports[`rbg should be correct 1`] = `
       <div
         class="colorName"
       >
-        blue
+        blue(12880)
       </div>
       <div
         class="colorRange"

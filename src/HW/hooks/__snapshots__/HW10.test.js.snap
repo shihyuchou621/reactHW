@@ -16,7 +16,7 @@ exports[`ntd should change correctly 1`] = `
       <input
         data-testid="HW10Input"
         name="usd"
-        value="2"
+        value="02"
       />
     </div>
   </div>
@@ -31,7 +31,7 @@ exports[`usd should change correctly 1`] = `
       <input
         data-testid="HW10Input"
         name="ntd"
-        value="90"
+        value="090"
       />
     </div>
     <div>

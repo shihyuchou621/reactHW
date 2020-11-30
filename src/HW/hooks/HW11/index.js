@@ -26,8 +26,6 @@ export default function HW11() {
 
   const { red, green, blue } = colors;
 
-  console.log(colors);
-
   return (
     <div>
       <div>

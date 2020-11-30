@@ -24,7 +24,7 @@ exports[`should have correct subtotal and total 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="橘子"
@@ -54,7 +54,7 @@ exports[`should have correct subtotal and total 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="蓮霧"
@@ -84,7 +84,7 @@ exports[`should have correct subtotal and total 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="哈蜜瓜"
@@ -114,7 +114,7 @@ exports[`should have correct subtotal and total 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="蘋果"
@@ -144,7 +144,7 @@ exports[`should have correct subtotal and total 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="葡萄柚"
@@ -332,7 +332,7 @@ exports[`should minus and clear correctly 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="橘子"
@@ -362,7 +362,7 @@ exports[`should minus and clear correctly 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="蓮霧"
@@ -392,7 +392,7 @@ exports[`should minus and clear correctly 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="哈蜜瓜"
@@ -422,7 +422,7 @@ exports[`should minus and clear correctly 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="蘋果"
@@ -452,7 +452,7 @@ exports[`should minus and clear correctly 1`] = `
         >
           <input
             class="input"
-            data-testid="Product"
+            data-testid="input"
             max="99"
             min="0"
             name="葡萄柚"

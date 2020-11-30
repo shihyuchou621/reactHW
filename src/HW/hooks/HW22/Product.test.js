@@ -19,8 +19,9 @@ test('should have correct value', () => {
   );
 
   userEvent.type(getByTestId('input'), '5{enter}');
-  expect(onSubmit.mock.results[0].value).toBe(5);
+  expect(container).toMatchSnapshot();
 
   userEvent.type(getByTestId('input'), '2{enter}');
-  expect(onSubmit.mock.results[1].value).toBe(2);
+  expect(container).toMatchSnapshot();
+
 });
