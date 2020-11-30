@@ -2,9 +2,20 @@
 
 exports[`onChange should work 1`] = `
 <div>
-  <div>
-    usd
+  <div
+    class="input-group mb-3"
+  >
+    <div
+      class="input-group-prepend"
+    >
+      <span
+        class="input-group-text"
+      >
+        usd
+      </span>
+    </div>
     <input
+      class="form-control"
       data-testid="HW10Input"
       name="usd"
       value="1"
@@ -15,9 +26,20 @@ exports[`onChange should work 1`] = `
 
 exports[`should have correct value 1`] = `
 <div>
-  <div>
-    usd
+  <div
+    class="input-group mb-3"
+  >
+    <div
+      class="input-group-prepend"
+    >
+      <span
+        class="input-group-text"
+      >
+        usd
+      </span>
+    </div>
     <input
+      class="form-control"
       data-testid="HW10Input"
       name="usd"
       value="3"

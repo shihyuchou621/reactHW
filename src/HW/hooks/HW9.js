@@ -35,7 +35,7 @@ export default function NewYear() {
   // (3)第二個參數是有內容的陣列：內容改變的時候才會執行return跟intreval
 
   return (
-    <div>
+    <div className="container">
       <h1>離2021跨年還有: {getCountDown(ms)}</h1>
     </div>
   );

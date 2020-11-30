@@ -2,8 +2,15 @@
 
 exports[`should HW1 1`] = `
 <div>
-  <div>
-    <button>
+  <div
+    class="container"
+  >
+    <h2>
+      +1按鈕
+    </h2>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
       counter: 
       0
     </button>
@@ -13,8 +20,15 @@ exports[`should HW1 1`] = `
 
 exports[`should simulate onClick event 1`] = `
 <div>
-  <div>
-    <button>
+  <div
+    class="container"
+  >
+    <h2>
+      +1按鈕
+    </h2>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
       counter: 
       1
     </button>

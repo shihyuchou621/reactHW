@@ -26,12 +26,23 @@ export default function Counter() {
   };
 
   return (
-    <>
-      <div>身高: <input data-testid="cm" name="cm" value={data.cm} onChange={handleChange} /></div>
-      <div>體重: <input data-testid="kg" name="kg" value={data.kg} onChange={handleChange} /></div>
-      <button onClick={handleClick}>計算!</button>
-      <div>BMI: {data.bmi} </div>
-    </>
+    <div className="container">
+      <h2>計算BMI</h2>
+      <div className="input-group mb-3">
+        <div className="input-group-prepend">
+          <span className="input-group-text">身高</span>
+        </div>
+        <input className="form-control" placeholder="170" data-testid="cm" name="cm" value={data.cm} onChange={handleChange} />
+      </div>
+      <div className="input-group mb-3">
+        <div className="input-group-prepend">
+          <span className="input-group-text">體重</span>
+        </div>
+        <input className="form-control" placeholder="60" data-testid="kg" name="kg" value={data.kg} onChange={handleChange} />
+      </div>
+      <button className="btn btn-secondary btn-lg" onClick={handleClick}>計算!</button>
+      <h2>BMI: {data.bmi} </h2>
+    </div>
   );
 }
 

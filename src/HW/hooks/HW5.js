@@ -13,12 +13,16 @@ export default function TodoList() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        todo: <input data-testid='input' ref={DOM} />
+    <div className="container">
+      <h2>輸入生成列表</h2>
+      <form className="input-group mb-3" onSubmit={handleSubmit}>
+        <div className="input-group-prepend">
+          <span className="input-group-text" id="basic-addon1">todo</span>
+        </div>
+        <input className="form-control" data-testid='input' ref={DOM} />
       </form>
-      <ul>{result.map(todo =>
-        <li key={todo}>{todo}</li>)}
+      <ul className="list-group">{result.map(todo =>
+        <li className="list-group-item" key={todo}>{todo}</li>)}
       </ul>
     </div>
   );

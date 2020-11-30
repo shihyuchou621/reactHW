@@ -37,7 +37,8 @@ export default function Master() {
   // console.log(score);
 
   return (
-    <div>
+    <div className="container">
+      <h2>隨機閃爍字母</h2>
       <h3>{isQ ? 'Q': '-'}</h3>
       <div data-testid="score">
           score: {score}

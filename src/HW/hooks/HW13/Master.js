@@ -36,26 +36,26 @@ export default function Master() {
 
   return (
     <div className="container">
+      <h2>代辦事項</h2>
       <form
         onSubmit={handleSubmit}
         data-testid="form"
+        className="input-group"
       >
-        <div className="input-group mb-3">
-          <input
-            data-testid="input"
-            type="text"
-            value={input}
-            className="form-control"
-            onChange={handleChange}
-          />
-          <div className="input-group-append">
-            <button
-              data-testid="button"
-              className="btn btn-outline-secondary"
-            >
+        <input
+          data-testid="input"
+          type="text"
+          value={input}
+          className="form-control"
+          onChange={handleChange}
+        />
+        <div className="input-group-append">
+          <button
+            data-testid="button"
+            className="btn btn-outline-secondary"
+          >
                 save
-            </button>
-          </div>
+          </button>
         </div>
       </form>
       <ul className="list-group">

@@ -7,7 +7,8 @@ import style from './style.module.css';
 export default function Index() {
   // component的children傳到子層會變成陣列形式，一個標籤一個項目
   return (
-    <div>
+    <div className="container">
+      <h2>輪播器</h2>
       <Carousel
         time={1500}
         showDots={true}

@@ -12,12 +12,13 @@ export default function Counter() {
   };
 
   return (
-    <div>
-      <button onClick={handleClick}>
+    <div className="container">
+      <h2>生成列表</h2>
+      <button class="btn btn-secondary btn-lg" onClick={handleClick}>
         submit
       </button>
-      <ul>{result.map(value =>
-        <li key={value}>{value}</li>)}
+      <ul className="list-group">{result.map(value =>
+        <li className="list-group-item" key={value}>{value}</li>)}
       </ul>
     </div>
   );

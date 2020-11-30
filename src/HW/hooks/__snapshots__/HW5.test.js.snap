@@ -2,16 +2,39 @@
 
 exports[`should have blank in list 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      輸入生成列表
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul>
-      <li />
-      <li>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      />
+      <li
+        class="list-group-item"
+      >
         qwerty
       </li>
     </ul>
@@ -21,18 +44,41 @@ exports[`should have blank in list 1`] = `
 
 exports[`should have lists 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      輸入生成列表
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul>
-      <li>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
         zxcvbn
       </li>
-      <li>
+      <li
+        class="list-group-item"
+      >
         qwerty
       </li>
     </ul>

@@ -24,7 +24,8 @@ export default function Master() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <h2>打數字遊戲</h2>
       <h3>{random}</h3>
       <input
         data-testid="input"

@@ -27,12 +27,14 @@ export default function HW11() {
   const { red, green, blue } = colors;
 
   return (
-    <div>
+    <div className="container">
+      <h2 className={style.title}>調色盤</h2>
       <div>
         <div
           className={style.box}
           style={{
             backgroundColor: `rgb(${red}, ${green}, ${blue})`,
+            border: "1px solid gray"
           }}
         />
       </div>

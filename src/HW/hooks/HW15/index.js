@@ -32,7 +32,8 @@ export default function Index() {
   };
 
   return (
-    <div className={`${style.container} ${style.HW15}`}>
+    <div className={`container ${style.HW15}`}>
+      <h2>長度轉換</h2>
       <div>
         {unitList.map(item =>
           <LenthInput

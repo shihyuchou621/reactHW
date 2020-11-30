@@ -2,18 +2,45 @@
 
 exports[`ntd should change correctly 1`] = `
 <div>
-  <div>
-    <div>
-      ntd
+  <div
+    class="container"
+  >
+    <h2>
+      貨幣轉換
+    </h2>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          ntd
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="HW10Input"
         name="ntd"
         value="60"
       />
     </div>
-    <div>
-      usd
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          usd
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="HW10Input"
         name="usd"
         value="02"
@@ -25,18 +52,45 @@ exports[`ntd should change correctly 1`] = `
 
 exports[`usd should change correctly 1`] = `
 <div>
-  <div>
-    <div>
-      ntd
+  <div
+    class="container"
+  >
+    <h2>
+      貨幣轉換
+    </h2>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          ntd
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="HW10Input"
         name="ntd"
         value="090"
       />
     </div>
-    <div>
-      usd
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          usd
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="HW10Input"
         name="usd"
         value="3"

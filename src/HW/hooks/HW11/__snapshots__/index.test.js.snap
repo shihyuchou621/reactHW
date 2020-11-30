@@ -2,11 +2,18 @@
 
 exports[`rbg should be correct 1`] = `
 <div>
-  <div>
+  <div
+    class="container"
+  >
+    <h2
+      class="title"
+    >
+      調色盤
+    </h2>
     <div>
       <div
         class="box"
-        style="background-color: rgb(255, 255, 255);"
+        style="background-color: rgb(255, 255, 255); border: 1px solid gray;"
       />
     </div>
     <div

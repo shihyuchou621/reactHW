@@ -40,10 +40,11 @@ export default function Index() {
   };
 
   return (
-    <div>
-      <h2 data-testid="range">
+    <div className="container">
+      <h2>終極密碼</h2>
+      <h3 data-testid="range">
         現在範圍: {min} ~ {max}
-      </h2>
+      </h3>
       <form
         data-testid="form"
         className="input-group mb-3"

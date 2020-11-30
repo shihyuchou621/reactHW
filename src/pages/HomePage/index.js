@@ -5,7 +5,7 @@ import {
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="container">
       <h1>React.js</h1>
       <ul className="list-group list-group-flush">
         <li className="list-group-item"><Link to="/HW27">Carousel</Link> 輪播器</li>
@@ -16,7 +16,7 @@ export default function HomePage() {
         <li className="list-group-item"><Link to="/HW21">1A2B</Link> 猜數字</li>
         <li className="list-group-item"><Link to="/HW20">GuessNum</Link> 終極密碼</li>
         <li className="list-group-item"><Link to="/HW19">Gopher</Link> 打地鼠</li>
-        <li className="list-group-item"><Link to="/HW18">TwinkklingChar</Link> 閃爍字母</li>
+        <li className="list-group-item"><Link to="/HW18">TwinkklingChar</Link> 隨機閃爍字母</li>
         <li className="list-group-item"><Link to="/HW17">RandomNum</Link> 生成隨機數字</li>
         <li className="list-group-item"><Link to="/HW16">NumberGame</Link> 打數字遊戲</li>
         <li className="list-group-item"><Link to="/HW15">LengthConversion</Link> 長度轉換</li>

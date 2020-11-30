@@ -19,6 +19,7 @@ export default function New12() {
 
   return (
     <div className={style.HW12}>
+      <h2>標籤</h2>
       {tagList.map((tag, index) =>
         <div
           key={index}

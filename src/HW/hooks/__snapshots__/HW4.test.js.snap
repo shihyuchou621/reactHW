@@ -2,116 +2,248 @@
 
 exports[`cm should change 1`] = `
 <div>
-  <div>
-    身高: 
-    <input
-      data-testid="cm"
-      name="cm"
-      value="165"
-    />
-  </div>
-  <div>
-    體重: 
-    <input
-      data-testid="kg"
-      name="kg"
-      value=""
-    />
-  </div>
-  <button>
-    計算!
-  </button>
-  <div>
-    BMI: 
-    
-     
+  <div
+    class="container"
+  >
+    <h2>
+      計算BMI
+    </h2>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          身高
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="cm"
+        name="cm"
+        placeholder="170"
+        value="165"
+      />
+    </div>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          體重
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="kg"
+        name="kg"
+        placeholder="60"
+        value=""
+      />
+    </div>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
+      計算!
+    </button>
+    <h2>
+      BMI: 
+      
+       
+    </h2>
   </div>
 </div>
 `;
 
 exports[`kg should change 1`] = `
 <div>
-  <div>
-    身高: 
-    <input
-      data-testid="cm"
-      name="cm"
-      value=""
-    />
-  </div>
-  <div>
-    體重: 
-    <input
-      data-testid="kg"
-      name="kg"
-      value="50"
-    />
-  </div>
-  <button>
-    計算!
-  </button>
-  <div>
-    BMI: 
-    
-     
+  <div
+    class="container"
+  >
+    <h2>
+      計算BMI
+    </h2>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          身高
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="cm"
+        name="cm"
+        placeholder="170"
+        value=""
+      />
+    </div>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          體重
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="kg"
+        name="kg"
+        placeholder="60"
+        value="50"
+      />
+    </div>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
+      計算!
+    </button>
+    <h2>
+      BMI: 
+      
+       
+    </h2>
   </div>
 </div>
 `;
 
 exports[`should HW4 1`] = `
 <div>
-  <div>
-    身高: 
-    <input
-      data-testid="cm"
-      name="cm"
-      value=""
-    />
-  </div>
-  <div>
-    體重: 
-    <input
-      data-testid="kg"
-      name="kg"
-      value=""
-    />
-  </div>
-  <button>
-    計算!
-  </button>
-  <div>
-    BMI: 
-    
-     
+  <div
+    class="container"
+  >
+    <h2>
+      計算BMI
+    </h2>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          身高
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="cm"
+        name="cm"
+        placeholder="170"
+        value=""
+      />
+    </div>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          體重
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="kg"
+        name="kg"
+        placeholder="60"
+        value=""
+      />
+    </div>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
+      計算!
+    </button>
+    <h2>
+      BMI: 
+      
+       
+    </h2>
   </div>
 </div>
 `;
 
 exports[`should calculate 1`] = `
 <div>
-  <div>
-    身高: 
-    <input
-      data-testid="cm"
-      name="cm"
-      value="165"
-    />
-  </div>
-  <div>
-    體重: 
-    <input
-      data-testid="kg"
-      name="kg"
-      value="50"
-    />
-  </div>
-  <button>
-    計算!
-  </button>
-  <div>
-    BMI: 
-    18.37
-     
+  <div
+    class="container"
+  >
+    <h2>
+      計算BMI
+    </h2>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          身高
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="cm"
+        name="cm"
+        placeholder="170"
+        value="165"
+      />
+    </div>
+    <div
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+        >
+          體重
+        </span>
+      </div>
+      <input
+        class="form-control"
+        data-testid="kg"
+        name="kg"
+        placeholder="60"
+        value="50"
+      />
+    </div>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
+      計算!
+    </button>
+    <h2>
+      BMI: 
+      18.37
+       
+    </h2>
   </div>
 </div>
 `;

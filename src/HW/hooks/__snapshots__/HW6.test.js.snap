@@ -2,113 +2,196 @@
 
 exports[`should be deleted 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      列表新增刪除功能
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul />
+    <div
+      class="list-group"
+    />
   </div>
 </div>
 `;
 
 exports[`should have blank in list 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      列表新增刪除功能
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul>
-      <li>
-        
-        <button
-          data-testid="button0"
-        >
-          remove
-        </button>
-      </li>
-      <li>
+    <div
+      class="list-group"
+    >
+      <button
+        class="list-group-item"
+        data-testid="button0"
+      />
+      <button
+        class="list-group-item"
+        data-testid="button1"
+      >
         qwerty
-        <button
-          data-testid="button1"
-        >
-          remove
-        </button>
-      </li>
-    </ul>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`should have list 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      列表新增刪除功能
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul>
-      <li>
+    <div
+      class="list-group"
+    >
+      <button
+        class="list-group-item"
+        data-testid="button0"
+      >
         qwerty
-        <button
-          data-testid="button0"
-        >
-          remove
-        </button>
-      </li>
-    </ul>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`should have lists 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      列表新增刪除功能
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul>
-      <li>
+    <div
+      class="list-group"
+    >
+      <button
+        class="list-group-item"
+        data-testid="button0"
+      >
         zxcvbn
-        <button
-          data-testid="button0"
-        >
-          remove
-        </button>
-      </li>
-      <li>
+      </button>
+      <button
+        class="list-group-item"
+        data-testid="button1"
+      >
         qwerty
-        <button
-          data-testid="button1"
-        >
-          remove
-        </button>
-      </li>
-    </ul>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`value should change 1`] = `
 <div>
-  <div>
-    <form>
-      todo: 
+  <div
+    class="container"
+  >
+    <h2>
+      列表新增刪除功能
+    </h2>
+    <form
+      class="input-group mb-3"
+    >
+      <div
+        class="input-group-prepend"
+      >
+        <span
+          class="input-group-text"
+          id="basic-addon1"
+        >
+          todo
+        </span>
+      </div>
       <input
+        class="form-control"
         data-testid="input"
       />
     </form>
-    <ul />
+    <div
+      class="list-group"
+    />
   </div>
 </div>
 `;

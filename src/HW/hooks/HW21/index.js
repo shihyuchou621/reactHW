@@ -60,8 +60,8 @@ export default function Index() {
   };
 
   return (
-    <div>
-      <h1>猜數字</h1>
+    <div className="container">
+      <h2>猜數字</h2>
       <div>1. 一進到遊戲電腦隨機產生4位不重複數字</div>
       <div>2. 使用者送出答案，若不符合「不重複4位數字」則跳錯誤訊息</div>
       <div>3. 送出的答案跟正確答案比較，位置一樣則A，位置不同則B</div>

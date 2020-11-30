@@ -5,6 +5,9 @@ exports[`content 1 should change correctly 1`] = `
   <div
     class="HW12"
   >
+    <h2>
+      標籤
+    </h2>
     <div
       class="tagName choice"
     >
@@ -39,6 +42,9 @@ exports[`content 2 should change correctly 1`] = `
   <div
     class="HW12"
   >
+    <h2>
+      標籤
+    </h2>
     <div
       class="tagName "
     >
@@ -73,6 +79,9 @@ exports[`content 3 should change correctly 1`] = `
   <div
     class="HW12"
   >
+    <h2>
+      標籤
+    </h2>
     <div
       class="tagName "
     >
@@ -107,6 +116,9 @@ exports[`content 4 should change correctly 1`] = `
   <div
     class="HW12"
   >
+    <h2>
+      標籤
+    </h2>
     <div
       class="tagName "
     >

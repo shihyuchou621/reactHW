@@ -12,7 +12,8 @@ export default function HW10() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <h2>貨幣轉換</h2>
       <HW10Input
         dollar={dollar}
         money={money}

@@ -27,6 +27,7 @@ export default function Index() {
 
   return (
     <div className={`container ${style.HW14}`}>
+      <h2>寶可夢抓取篩選</h2>
       <div className="input-group mb-3">
         <div className="input-group-prepend">
           <span className="input-group-text" id="basic-addon1">

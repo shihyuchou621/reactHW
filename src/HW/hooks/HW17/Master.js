@@ -26,8 +26,9 @@ export default function Master() {
   );
 
   return (
-    <div data-testid="num">
-      {num}
+    <div className="container">
+      <h2>生成隨機數字</h2>
+      <h3 data-testid="num">{num}</h3>
     </div>
   );
 }

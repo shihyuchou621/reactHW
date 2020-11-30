@@ -10,8 +10,9 @@ export default function Counter() {
   };
 
   return (
-    <div>
-      <button onClick={handleClick}>
+    <div className="container">
+      <h2>+1按鈕</h2>
+      <button class="btn btn-secondary btn-lg" onClick={handleClick}>
         counter: {count}
       </button>
     </div>

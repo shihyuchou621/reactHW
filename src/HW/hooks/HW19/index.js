@@ -13,7 +13,8 @@ export default function Index() {
 
   return (
     <div className={style.HW19}>
-      <h1 data-testid={style.score} className={style.score}>
+      <h2 className={style.score}>打地鼠</h2>
+      <h1 data-testid="score" className={style.score}>
         {sumScore}
       </h1>
       <div className={style.wrapper}>

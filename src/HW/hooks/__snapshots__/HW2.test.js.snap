@@ -2,12 +2,23 @@
 
 exports[`list should add 1 item 1`] = `
 <div>
-  <div>
-    <button>
+  <div
+    class="container"
+  >
+    <h2>
+      生成列表
+    </h2>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
       submit
     </button>
-    <ul>
-      <li>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
         1
       </li>
     </ul>
@@ -17,21 +28,38 @@ exports[`list should add 1 item 1`] = `
 
 exports[`list should add 4 item 1`] = `
 <div>
-  <div>
-    <button>
+  <div
+    class="container"
+  >
+    <h2>
+      生成列表
+    </h2>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
       submit
     </button>
-    <ul>
-      <li>
+    <ul
+      class="list-group"
+    >
+      <li
+        class="list-group-item"
+      >
         4
       </li>
-      <li>
+      <li
+        class="list-group-item"
+      >
         3
       </li>
-      <li>
+      <li
+        class="list-group-item"
+      >
         2
       </li>
-      <li>
+      <li
+        class="list-group-item"
+      >
         1
       </li>
     </ul>
@@ -41,11 +69,20 @@ exports[`list should add 4 item 1`] = `
 
 exports[`should HW2 1`] = `
 <div>
-  <div>
-    <button>
+  <div
+    class="container"
+  >
+    <h2>
+      生成列表
+    </h2>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
       submit
     </button>
-    <ul />
+    <ul
+      class="list-group"
+    />
   </div>
 </div>
 `;

@@ -10,13 +10,14 @@ export default function Counter() {
   };
 
   return (
-    <div>
-      <button onClick={handleClick}>
+    <div className="container">
+      <h2>按鈕加總</h2>
+      <button className="btn btn-secondary btn-lg" onClick={handleClick}>
         add it
       </button>
-      <div>
+      <h1>
         {result}
-      </div>
+      </h1>
     </div>
   );
 }

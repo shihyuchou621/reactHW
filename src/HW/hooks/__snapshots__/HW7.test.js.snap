@@ -2,13 +2,20 @@
 
 exports[`should fetch data 1`] = `
 <div>
-  <div>
-    <button>
+  <div
+    class="container"
+  >
+    <h2>
+      按鈕加總
+    </h2>
+    <button
+      class="btn btn-secondary btn-lg"
+    >
       add it
     </button>
-    <div>
+    <h1>
       0
-    </div>
+    </h1>
   </div>
 </div>
 `;

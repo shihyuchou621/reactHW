@@ -17,21 +17,24 @@ export default function TodoList() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        todo: <input data-testid="input" ref={DOM} />
+    <div className="container">
+      <h2>列表新增刪除功能</h2>
+      <form className="input-group mb-3" onSubmit={handleSubmit}>
+        <div className="input-group-prepend">
+          <span className="input-group-text" id="basic-addon1">todo</span>
+        </div>
+        <input className="form-control" data-testid="input" ref={DOM} />
       </form>
-      <ul>{result.map((todo, index) =>
-        <li key={todo}>
+      <div className="list-group">{result.map((todo, index) =>
+        <button
+          className="list-group-item"
+          key={todo}
+          data-testid={`button${index}`}
+          onClick={handleClick.bind(this, index)}
+        >
           {todo}
-          <button
-            data-testid={`button${index}`}
-            onClick={handleClick.bind(this, index)}
-          >
-            remove
-          </button>
-        </li>)}
-      </ul>
+        </button>)}
+      </div>
 
     </div>
   );
