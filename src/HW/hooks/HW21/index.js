@@ -1,4 +1,7 @@
 import React, { createRef, useState } from 'react';
+import style from './style.module.css';
+import Item from './Item';
+import Modal from '../HW25/Modal';
 
 const DOM = createRef();
 
@@ -51,7 +54,7 @@ export default function Index() {
     setState(state => ({
       ...state,
       replyList: [
-        { id: Math.random(), result: `${value}: ${a}A${b}B` },
+        { id: Math.random(), result: <Item {...{ value, a, b}} /> },
         ...replyList,
       ],
       correct: value === answer,
@@ -60,37 +63,53 @@ export default function Index() {
   };
 
   return (
-    <div className="container">
-      <h2>猜數字</h2>
-      <div>1. 一進到遊戲電腦隨機產生4位不重複數字</div>
-      <div>2. 使用者送出答案，若不符合「不重複4位數字」則跳錯誤訊息</div>
-      <div>3. 送出的答案跟正確答案比較，位置一樣則A，位置不同則B</div>
-      <div>4. 會累積過去猜過的答案與結果</div>
-      <div>5. 如果猜到 4A 則遊戲結束，並可另開新局</div>
-      <form data-testid="form" onSubmit={handleEnter}>
-        <input
-          data-testid="input"
-          disabled={correct}
-          ref={DOM}
-        />
-        <button>猜!</button>
-        {/* type屬性若空白則預設onSubmit，另有button(按了無作用)、reset(回復form的預設值) */}
-      </form>
-      <ul data-testid="resultList">
-        {/* map裡所有標籤都要記得加key */}
-        {replyList.map((reply, index) =>
-          <li data-testid={`result${index}`} key={index}>
-            {reply.result}
-          </li>
-        )}
-      </ul>
-      <div>
-        {correct &&
-        <div data-testid="4A">
-            答對了！遊戲結束，你要重新一局嗎？
-          <button onClick={handleClick}>好!</button>
+    <div className={style.container}>
+      <div className={style.descrip}>
+        <h2>猜數字</h2>
+        <div>1. 一進到遊戲電腦隨機產生4位不重複數字</div>
+        <div>2. 使用者送出答案，若不符合「不重複4位數字」則跳錯誤訊息</div>
+        <div>3. 送出的答案跟正確答案比較，位置一樣則A，位置不同則B</div>
+        <div>4. 會累積過去猜過的答案與結果</div>
+        <div>5. 如果猜到 4A 則遊戲結束，並可另開新局</div>
+        <form
+          className={style.form}
+          data-testid="form"
+          onSubmit={handleEnter}
+        >
+          <input
+            className={style.input}
+            data-testid="input"
+            disabled={correct}
+            ref={DOM}
+          />
+          <button className={style.button}>Guess</button>
+          {/* type屬性若空白則預設onSubmit，另有button(按了無作用)、reset(回復form的預設值) */}
+        </form>
+        <ul data-testid="resultList">
+          {/* map裡所有標籤都要記得加key */}
+          {replyList.map((reply, index) =>
+            <li
+              className={style.li}
+              data-testid={`result${index}`}
+              key={index}
+            >
+              {reply.result}
+            </li>
+          )}
+        </ul>
+        <div>
+          {correct &&
+            <Modal
+              name="top + animation"
+              isAnimation={true}
+              closeText="好"
+              onClose={handleClick}
+              btnClass={style.button}
+            >
+              答對了！你要再來一局嗎？
+            </Modal>
+          }
         </div>
-        }
       </div>
     </div>
   );

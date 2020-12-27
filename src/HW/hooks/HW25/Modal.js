@@ -10,7 +10,9 @@ export default function Modal(props) {
     position,
     isAnimation,
     children,
-    onClose
+    onClose,
+    closeText,
+    btnClass,
   } = props;
 
   return (
@@ -28,10 +30,10 @@ export default function Modal(props) {
           {children}
         </div>
         <button
-          className="btn btn-primary btn-block"
+          className={btnClass}
           onClick={onClose}
         >
-            關閉
+          {closeText}
         </button>
       </div>
     </div>

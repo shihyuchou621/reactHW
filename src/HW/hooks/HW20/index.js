@@ -1,4 +1,6 @@
 import React, { createRef, useState } from 'react';
+import style from './style.module.css';
+import Modal from '../HW25/Modal';
 
 const DOM = createRef();
 
@@ -40,31 +42,54 @@ export default function Index() {
   };
 
   return (
-    <div className="container">
-      <h2>終極密碼</h2>
-      <h3 data-testid="range">
+    <div className={style.container}>
+      <div className={style.descrip}>
+        <h2>終極密碼</h2>
+        <h3 data-testid="range">
         現在範圍: {min} ~ {max}
-      </h3>
-      <form
-        data-testid="form"
-        className="input-group mb-3"
-        onSubmit={handleEnter}
-      >
-        <input
-          data-testid="input"
-          name="guess"
-          disabled={false}
-          ref={DOM}
-        />
-      </form>
-      <h2>
-        {!!correct &&
-            <div data-testid="answer">
-              答對了！答案就是{answer}
-              <button onClick={handleClick}>再來一局</button>
+        </h3>
+        <form
+          data-testid="form"
+          onSubmit={handleEnter}
+        >
+          <input
+            className={style.input}
+            data-testid="input"
+            name="guess"
+            disabled={false}
+            ref={DOM}
+          />
+        </form>
+        <div className={style.bar}>
+          <div
+            className={style.innerbar}
+            style={{
+              left: `${min/1000*100}%`,
+              right: `${(1000-max)/1000*100}%`
+            }}>
+            <div className={style.left}>
+              <span className={style.numup}>{min}</span>
             </div>
-        }
-      </h2>
+            <div className={style.right}>
+              <span className={style.numdown}>{max}</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          {!!correct &&
+            <Modal
+              name="top + animation"
+              isAnimation={true}
+              closeText="再來一局"
+              onClose={handleClick}
+              btnClass={style.button}
+              data-testid="answer"
+            >
+              答對了！答案就是{answer}
+            </Modal>
+          }
+        </div>
+      </div>
     </div>
   );
 }
