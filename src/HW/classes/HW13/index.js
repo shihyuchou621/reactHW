@@ -59,7 +59,7 @@ export default class index extends Component {
             placeholder="todo..."
             onChange={handleChange}
           />
-          <div class="input-group-append">
+          <div className="input-group-append">
             <button className="btn btn-outline-secondary" onClick={handleEnter}>Create!</button>
           </div>
         </form>

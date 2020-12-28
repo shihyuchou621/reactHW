@@ -6,14 +6,14 @@ exports[`animation should work 1`] = `
     class="wrapper"
   >
     <div
-      class="item  animationHide"
+      class="item "
     >
       <div>
         1
       </div>
     </div>
     <div
-      class="item  animationShow"
+      class="item "
     >
       <div>
         2
@@ -30,10 +30,10 @@ exports[`animation should work 1`] = `
       class="dotsWrapper"
     >
       <div
-        class="dots"
+        class="dots dotShow"
       />
       <div
-        class="dots dotShow"
+        class="dots"
       />
       <div
         class="dots"
@@ -49,20 +49,6 @@ exports[`animation should work 2`] = `
     class="wrapper"
   >
     <div
-      class="item  animationHide"
-    >
-      <div>
-        2
-      </div>
-    </div>
-    <div
-      class="item  animationShow"
-    >
-      <div>
-        3
-      </div>
-    </div>
-    <div
       class="item "
     >
       <div>
@@ -70,16 +56,30 @@ exports[`animation should work 2`] = `
       </div>
     </div>
     <div
+      class="item "
+    >
+      <div>
+        2
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        3
+      </div>
+    </div>
+    <div
       class="dotsWrapper"
     >
       <div
-        class="dots"
-      />
-      <div
-        class="dots"
-      />
-      <div
         class="dots dotShow"
+      />
+      <div
+        class="dots"
+      />
+      <div
+        class="dots"
       />
     </div>
   </div>
@@ -92,14 +92,7 @@ exports[`animation should work 3`] = `
     class="wrapper"
   >
     <div
-      class="item  animationHide"
-    >
-      <div>
-        3
-      </div>
-    </div>
-    <div
-      class="item  animationShow"
+      class="item "
     >
       <div>
         1
@@ -110,6 +103,13 @@ exports[`animation should work 3`] = `
     >
       <div>
         2
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        3
       </div>
     </div>
     <div
@@ -135,14 +135,14 @@ exports[`showDots is false 1`] = `
     class="wrapper"
   >
     <div
-      class="item  animationHide"
+      class="item "
     >
       <div>
         1
       </div>
     </div>
     <div
-      class="item  animationShow"
+      class="item "
     >
       <div>
         2
@@ -165,24 +165,24 @@ exports[`showDots is false 2`] = `
     class="wrapper"
   >
     <div
-      class="item  animationHide"
+      class="item "
     >
       <div>
-        2
-      </div>
-    </div>
-    <div
-      class="item  animationShow"
-    >
-      <div>
-        3
+        1
       </div>
     </div>
     <div
       class="item "
     >
       <div>
-        1
+        2
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        3
       </div>
     </div>
   </div>
@@ -195,14 +195,7 @@ exports[`showDots is false 3`] = `
     class="wrapper"
   >
     <div
-      class="item  animationHide"
-    >
-      <div>
-        3
-      </div>
-    </div>
-    <div
-      class="item  animationShow"
+      class="item "
     >
       <div>
         1
@@ -213,6 +206,13 @@ exports[`showDots is false 3`] = `
     >
       <div>
         2
+      </div>
+    </div>
+    <div
+      class="item "
+    >
+      <div>
+        3
       </div>
     </div>
   </div>

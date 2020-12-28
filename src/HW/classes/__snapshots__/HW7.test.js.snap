@@ -5,12 +5,12 @@ exports[`should fetch data 1`] = `
   <div>
     <div>
       <button
-        class="btn btn-primary"
+        className="btn btn-primary"
       >
         Update List
       </button>
       <table
-        class="table table-striped table-hover"
+        className="table table-striped table-hover"
       >
         <thead>
           <tr>

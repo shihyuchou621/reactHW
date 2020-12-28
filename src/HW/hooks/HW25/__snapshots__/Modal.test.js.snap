@@ -3,10 +3,10 @@
 exports[`Modal 1`] = `
 <div>
   <div
-    class="modalBg"
+    className="modalBg"
   >
     <div
-      class="allModal myModal"
+      className="allModal myModal"
     >
       <div
         data-testid="content"
@@ -14,7 +14,7 @@ exports[`Modal 1`] = `
         lorem
       </div>
       <button
-        class="btn btn-primary btn-block"
+        className="btn btn-primary btn-block"
       >
         關閉
       </button>
@@ -26,10 +26,10 @@ exports[`Modal 1`] = `
 exports[`header 1`] = `
 <div>
   <div
-    class="modalBg"
+    className="modalBg"
   >
     <div
-      class="allModal myModal"
+      className="allModal myModal"
     >
       <div
         data-testid="content"
@@ -37,7 +37,7 @@ exports[`header 1`] = `
         lorem
       </div>
       <button
-        class="btn btn-primary btn-block"
+        className="btn btn-primary btn-block"
       >
         關閉
       </button>
@@ -49,10 +49,10 @@ exports[`header 1`] = `
 exports[`top + animation 1`] = `
 <div>
   <div
-    class="modalBg"
+    className="modalBg"
   >
     <div
-      class="allModal myAnimation myAnimation1"
+      className="allModal myAnimation myAnimation1"
     >
       <div
         data-testid="content"
@@ -60,7 +60,7 @@ exports[`top + animation 1`] = `
         lorem
       </div>
       <button
-        class="btn btn-primary btn-block"
+        className="btn btn-primary btn-block"
       >
         關閉
       </button>
@@ -72,10 +72,10 @@ exports[`top + animation 1`] = `
 exports[`top 1`] = `
 <div>
   <div
-    class="modalBg"
+    className="modalBg"
   >
     <div
-      class="allModal myTop"
+      className="allModal myTop"
     >
       <div
         data-testid="content"
@@ -83,7 +83,7 @@ exports[`top 1`] = `
         lorem
       </div>
       <button
-        class="btn btn-primary btn-block"
+        className="btn btn-primary btn-block"
       >
         關閉
       </button>

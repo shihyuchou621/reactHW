@@ -14,7 +14,7 @@ export default function Counter() {
   return (
     <div className="container">
       <h2>生成列表</h2>
-      <button class="btn btn-secondary btn-lg" onClick={handleClick}>
+      <button className="btn btn-secondary btn-lg" onClick={handleClick}>
         submit
       </button>
       <ul className="list-group">{result.map(value =>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup, wait } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import HW from './HW3';
+import HW from './HW7';
 
 afterEach(cleanup); // 跑完每個test之後都要執行cleanup(把測試完的component清空，避免後面的測試受到前面的影響)
 

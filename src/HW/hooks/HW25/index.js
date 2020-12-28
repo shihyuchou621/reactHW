@@ -27,7 +27,7 @@ export default function Index() {
         position="center"
         onClose={setShowIndex.bind(this, -1)}
         closeText="close"
-        btnClass="btn btn-primary btn-block"
+        btnclassName="btn btn-primary btn-block"
       >
         {lorem}
       </Modal>}
@@ -43,7 +43,7 @@ export default function Index() {
         position="top"
         onClose={setShowIndex.bind(this, -1)}
         closeText="close"
-        btnClass="btn btn-primary btn-block"
+        btnclassName="btn btn-primary btn-block"
       >
         {lorem}
       </Modal>}
@@ -60,7 +60,7 @@ export default function Index() {
         position="center"
         onClose={setShowIndex.bind(this, -1)}
         closeText="close"
-        btnClass="btn btn-primary btn-block"
+        btnclassName="btn btn-primary btn-block"
       >
         {lorem}
       </Modal>}
@@ -76,7 +76,7 @@ export default function Index() {
         isAnimation={true}
         onClose={setShowIndex.bind(this, -1)}
         closeText="close"
-        btnClass="btn btn-primary btn-block"
+        btnclassName="btn btn-primary btn-block"
       >
         {lorem}
       </Modal>}

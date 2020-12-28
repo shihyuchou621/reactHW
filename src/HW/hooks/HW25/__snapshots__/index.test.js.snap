@@ -21,10 +21,8 @@ exports[`click and show Modal 1`] = `
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
         </div>
-        <button
-          class="btn btn-primary btn-block"
-        >
-          關閉
+        <button>
+          close
         </button>
       </div>
     </div>
@@ -81,10 +79,8 @@ exports[`click and show header 1`] = `
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
         </div>
-        <button
-          class="btn btn-primary btn-block"
-        >
-          關閉
+        <button>
+          close
         </button>
       </div>
     </div>
@@ -133,10 +129,8 @@ exports[`click and show top + animation 1`] = `
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
         </div>
-        <button
-          class="btn btn-primary btn-block"
-        >
-          關閉
+        <button>
+          close
         </button>
       </div>
     </div>
@@ -170,10 +164,8 @@ exports[`click and show top 1`] = `
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ut vel, itaque, pariatur porro ad nihil, tempore nostrum enim natus illo aut voluptatibus. Perferendis maxime fuga doloremque magni, quidem error.
         </div>
-        <button
-          class="btn btn-primary btn-block"
-        >
-          關閉
+        <button>
+          close
         </button>
       </div>
     </div>

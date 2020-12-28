@@ -3,30 +3,30 @@
 exports[`should fetch data and get pokemon 1`] = `
 <div>
   <div
-    class="container HW14"
+    className="container HW14"
   >
     <div
-      class="input-group mb-3"
+      className="input-group mb-3"
     >
       <div
-        class="input-group-prepend"
+        className="input-group-prepend"
       >
         <span
-          class="input-group-text"
+          className="input-group-text"
           id="basic-addon1"
         >
           keyword
         </span>
       </div>
       <input
-        class="form-control"
+        className="form-control"
         data-testid="input"
         placeholder="name..."
         value="bulb"
       />
     </div>
     <div
-      class="inline"
+      className="inline"
     >
       <img
         alt="bulbasaur"

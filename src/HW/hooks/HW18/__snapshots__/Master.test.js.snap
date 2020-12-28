@@ -3,7 +3,7 @@
 exports[`correct answer 1`] = `
 <div>
   <div
-    class="container"
+    className="container"
   >
     <h2>
       隨機閃爍字母
@@ -29,7 +29,7 @@ exports[`correct answer 1`] = `
 exports[`wrong answer 1`] = `
 <div>
   <div
-    class="container"
+    className="container"
   >
     <h2>
       隨機閃爍字母

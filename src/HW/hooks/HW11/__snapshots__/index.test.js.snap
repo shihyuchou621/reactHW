@@ -22,7 +22,7 @@ exports[`rbg should be correct 1`] = `
       <div
         class="colorName"
       >
-        red(12835)
+        red(255)
       </div>
       <div
         class="colorRange"
@@ -33,7 +33,7 @@ exports[`rbg should be correct 1`] = `
           min="0"
           name="red"
           type="range"
-          value="12835"
+          value="255"
         />
       </div>
     </div>
@@ -43,7 +43,7 @@ exports[`rbg should be correct 1`] = `
       <div
         class="colorName"
       >
-        green(12892)
+        green(255)
       </div>
       <div
         class="colorRange"
@@ -54,7 +54,7 @@ exports[`rbg should be correct 1`] = `
           min="0"
           name="green"
           type="range"
-          value="12892"
+          value="255"
         />
       </div>
     </div>
@@ -64,7 +64,7 @@ exports[`rbg should be correct 1`] = `
       <div
         class="colorName"
       >
-        blue(12880)
+        blue(255)
       </div>
       <div
         class="colorRange"
@@ -75,7 +75,7 @@ exports[`rbg should be correct 1`] = `
           min="0"
           name="blue"
           type="range"
-          value="12880"
+          value="255"
         />
       </div>
     </div>
